@@ -2,7 +2,10 @@
 layout: "browsing/homepage"
 permalink: "/"
 last_updated: "July 5, 2021"
-image: assets/pages/index/2020-06.jpg
+image:
+    path: assets/pages/index/preview/2020-06.jpg
+    alt: Carter Pape takes a photo during a Black Lives Matter protest in Moab in June 2020
+    title: Me photographing a Black Lives Matter protest in Moab in June 2020
 description: I am a reporter for _The Times-Independent_ in Moab, Utah. Previously, I studied mathematics at North Carolina State University, where I also did student journalism and software development. I grew up in Durham, North Carolina.
 
 seo:
@@ -10,7 +13,7 @@ seo:
 ---
 
 {% capture content %}
-!["Carter Pape takes a photo during a Black Lives Matter protest in Moab in June 2020"]({% link assets/pages/index/2020-06.jpg %} "Me photographing a Black Lives Matter protest in Moab in June 2020")
+![{{ page.image.alt }}]({% link {{ page.image.path }} %} "{{ page.image.title }}")
 {% endcapture %}
 
 {% capture caption %}
