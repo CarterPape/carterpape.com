@@ -4,8 +4,12 @@ categories:
 layout: "browsing/card-list"
 title: "the blog"
 description: "a public repository of my personally and professionally relevant musings, updates, ideas, and more"
+
 redirect_from:
     - /blog/
+seo:
+    type: Blog
+regenerate: true
 ---
 
 {% assign blog_feed = site.categories["the-blog"] %}

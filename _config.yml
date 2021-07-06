@@ -106,6 +106,8 @@ defaults:
             author: Carter Pape
             layout: "reading/post"
             unlisted: false
+            seo:
+                type: BlogPosting
     -
         scope:
             path: "the-blog/unlisted"

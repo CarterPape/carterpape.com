@@ -2,6 +2,9 @@
 layout: "browsing/single-card"
 title: résumé
 last_updated: "July 5, 2021"
+
+seo:
+    type: Person
 ---
 
 ## profile

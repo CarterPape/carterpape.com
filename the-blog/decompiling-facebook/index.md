@@ -5,7 +5,11 @@ categories:
 layout: "browsing/card-list"
 title: "decompiling Facebook"
 description: "a series of notes on Facebook, privacy, regulation, mental health, and everything in between"
+
 redirect-from: "/the-blog/decompiling-facebook/"
+seo:
+    type: Blog
+regenerate: true
 ---
 
 {% assign decompiling_facebook_feed = site.categories["decompiling-facebook"] %}

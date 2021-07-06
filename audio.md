@@ -1,5 +1,9 @@
 ---
 published: false
+
+seo:
+    type: MediaGallery
+regenerate: true
 ---
 
 # audio

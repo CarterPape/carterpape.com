@@ -2,6 +2,9 @@
 layout: "browsing/single-card"
 title: contact
 last_updated: "July 5, 2020"
+
+seo:
+    type: ContactPage
 ---
 If you would like to contact me, you can:
 

@@ -5,6 +5,10 @@ categories:
 layout: "browsing/card-list"
 title: "making write, the app"
 description: "a series of notes on creating this website"
+
+seo:
+    type: Blog
+regenerate: true
 ---
 
 {% assign making_carterpape_com_feed = site.categories["making-carterpape-com"] %}
