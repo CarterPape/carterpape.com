@@ -83,8 +83,10 @@
         <img
             {% if include.image_url %}
                 src="{{ include.image_url }}"
+                {% imagesize include.image_url:props %}
             {% elsif include.image_path %}
                 src="{% link {{ include.image_path }} %}"
+                {% imagesize include.image_path:props %}
             {% endif %}
             alt="{{ alt | escape }}"
         />
