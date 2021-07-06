@@ -2,6 +2,8 @@
 layout: "browsing/homepage"
 permalink: "/"
 last_updated: "July 5, 2021"
+image: assets/pages/index/2020-06.jpg
+description: I am a reporter for _The Times-Independent_ in Moab, Utah. Previously, I studied mathematics at North Carolina State University, where I also did student journalism and software development. I grew up in Durham, North Carolina.
 ---
 
 {% capture content %}
