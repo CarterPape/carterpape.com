@@ -4,7 +4,7 @@ _url: https://www.linkedin.com/in/jamielynngilbert/
 ---
 
 Associate director of [Student Media] at NC State  
-Former advisor for [The Praeci Podcast] and [Protected Class]
+Previously my advisor for [The Praeci Podcast] and [Protected Class]
 
 [The Praeci Podcast]: https://praeci.com/podcast/
 [Protected Class]: https://praeci.com/protected-class/
