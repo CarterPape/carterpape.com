@@ -17,24 +17,20 @@ I have done extensive web development and software engineering, priming me for w
 
 [My LinkedIn profile](https://www.linkedin.com/in/{{ site.data.authors[site.author].linkedin }}/){:data-proofer-ignore="true" title="This link might be broken."} provides a comprehensive list of my work experiences. Below is a selection of those jobs:
 
-### Reporter at _[The Times-Independent]_
+### Reporter at _[The Times-Independent](https://moabtimes.com/)_
 
 #### January 2019 - now
 
-* Reporting on [housing]({% link the-blog/_posts/2021-07-05-housing-series.md %}), [county government][pandemic vote], [local impacts of the pandemic], [tourism][lodging petition], [education][Farnsworth investigation], and [more][black buck].
-* Coverage has won [multiple awards]({% link awards.html %}) from the state's press association.
-* Reported on [mail theft] in Moab, [the nonavailability of oil and gas] beneath a local recreation area that was nominated for drilling, and [the least affordable housing market] in the State of Utah.
-* Created and managed the newspaper’s previous, [award-winning]({% link the-blog/_posts/2020-06-15-moabtimes-com-wins-first.md %}) website; advised on digital and IT operations.
-
-[The Times-Independent]: https://moabtimes.com/
-[pandemic vote]: https://www.moabtimes.com/articles/grand-county-bending-to-business-votes-down-covid-19-response/
-[local impacts of the pandemic]: https://www.moabtimes.com/articles/unemployment-benefits-are-running-out-for-seasonal-workers/
-[lodging petition]: https://www.moabtimes.com/articles/hundreds-appeal-to-county-city-for-continued-lodging-cutback/
-[Farnsworth investigation]: https://www.moabtimes.com/articles/school-business-administrator-resigns-amid-investigation/
-[black buck]: https://www.moabtimes.com/articles/beloved-black-buck-leaves-legacy/
-[mail theft]: https://www.moabtimes.com/articles/mail-thief-caught/
-[the nonavailability of oil and gas]: https://www.moabtimes.com/articles/does-sand-flats-even-have-any-oil/
-[the least affordable housing market]: https://www.moabtimes.com/articles/study-half-of-moabites-cant-afford-housing/
+* My reporting has earned awards from the state's press association in the following categories:
+    * [Local government and politics]({% link awards.html %}#best-politics-2020) for a report on the county's form of government
+    * [Education]({% link awards.html %}#best-education-2020) for a report on the importance of applying for free meals for schoolchildren
+    * [General news]({% link awards.html %}#best-general-2020) for a report on the purchase of cultural artifacts by the CEO of the Fox Corporation
+* My journalism has also highlighted:
+    * [The nonavailability of oil and gas](https://www.moabtimes.com/articles/does-sand-flats-even-have-any-oil/) beneath a local recreation area that was nominated for drilling
+    * The lack of [action](https://www.moabtimes.com/articles/roughly-half-of-moabs-2017-housing-plan-is-incomplete/) and [leadership](https://www.moabtimes.com/articles/officials-say-moab-needs-leadership-on-housing/) on Moab's most pressing issue: [housing](https://www.moabtimes.com/articles/study-half-of-moabites-cant-afford-housing/)
+    * [One of the most respected educators](https://www.moabtimes.com/articles/the-lives-touched-by-margaret-hopkin/) Moab has ever had
+    * [A school investigation](https://www.moabtimes.com/articles/school-business-administrator-resigns-amid-investigation/) into claims of sexual harassment against the district's business administrator
+* I created, managed, and [won an award]({% link the-blog/_posts/2020-06-15-moabtimes-com-wins-first.md %}) for the newspaper’s previous website.
 
 ### Reporter at _[The Journal]_
 
@@ -44,15 +40,15 @@ I have done extensive web development and software engineering, priming me for w
 * Produced [a series][CKMS series] about a local public charter school facing financial and leadership distress.
 
 [The Journal]: https://the-journal.com
-[CKMS series]: https://the-journal.com/search?query=carter+pape+ckms
+[CKMS series]: https://www.the-journal.com/search/?search_dates=all&category=Everything&q=carter+pape+ckms
 
 ### Editor and Producer of [Praeci]
 
 #### September 2017 – May 2018
 
+* Won NC State Student Involvement's [2018 Model the Way award]({% link awards.html %}#model-the-way-2018) for general excellence.
 * Created 40-minute podcast episodes on NC State news and stories, including a focus on topics of diversity and inclusion through the podcast series [Protected Class].
 * Included [reporting][impeachment Praeci article] and [commentary][Jess commentary] on NC State Student Government news.
-* Won NC State Student Involvement's 2018 [Model the Way] award for general excellence.
 * Built [Praeci.com][Praeci] website from the ground up with Jekyll and GitHub Pages.
 
 [Protected Class]: https://praeci.com/protected-class/
