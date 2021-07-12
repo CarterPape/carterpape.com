@@ -1,7 +1,7 @@
 ---
 layout: "browsing/single-card"
 title: résumé
-last_updated: "July 5, 2021"
+last_updated: "July 12, 2021"
 
 seo:
     type: Person
@@ -9,9 +9,11 @@ seo:
 
 ## profile
 
-I am a reporter with work experience in newspaper journalism and software development. I have lived in North Carolina, Colorado, and now Utah.
+I am a reporter for The Times-Independent in Moab, Utah, where I have won statewide awards for both my journalism and my web development work.
 
-I have done extensive web development and software engineering, priming me for working in the digital media environment. I have practiced data analysis and data mining in both academic and journalistic pursuits, all complemented by my undergraduate studies in mathematics and computer science.
+I have previously reported from North Carolina and Colorado. I have three years of professional experience in the field, one year of experience in student journalism, five years in software development, and four additional years of side work in programming.
+
+Currently, my long-term career goal is to return to my hometown of Durham, North Carolina to manage a digital news media nonprofit to give back to the community that raised me and push the field forward.
 
 ## work experience
 
@@ -19,22 +21,23 @@ I have done extensive web development and software engineering, priming me for w
 
 ### Reporter at _[The Times-Independent](https://moabtimes.com/)_
 
-#### January 2019 - now
+#### January 2019 - now (2 years, 7 months)
 
+* As one of four full-time reporters in the 10,000-person county, I have produced or contributed to the area’s premier public service, government accountability, solutions, and investigative journalism.
+* In lieu of local programming expertise, I singlehandedly created and managed the newspaper's previous website during my first quarter on the job. The site later [won best in class]({% link the-blog/_posts/2020-06-15-moabtimes-com-wins-first.md %}).
 * My reporting has earned awards from the state's press association in the following categories:
-    * [Local government and politics]({% link awards.html %}#best-politics-2020) for a report on the county's form of government
-    * [Education]({% link awards.html %}#best-education-2020) for a report on the importance of applying for free meals for schoolchildren
-    * [General news]({% link awards.html %}#best-general-2020) for a report on the purchase of cultural artifacts by the CEO of the Fox Corporation
+    * [Local government and politics]({% link awards.html %}#best-politics-2020) for a report on the county's form of government.
+    * [Education]({% link awards.html %}#best-education-2020) for a report on the importance of applying for free meals for schoolchildren.
+    * [General news]({% link awards.html %}#best-general-2020) for a report on the purchase of cultural artifacts by the CEO of the Fox Corporation.
 * My journalism has also highlighted:
-    * [The nonavailability of oil and gas](https://www.moabtimes.com/articles/does-sand-flats-even-have-any-oil/) beneath a local recreation area that was nominated for drilling
-    * The lack of [action](https://www.moabtimes.com/articles/roughly-half-of-moabs-2017-housing-plan-is-incomplete/) and [leadership](https://www.moabtimes.com/articles/officials-say-moab-needs-leadership-on-housing/) on Moab's most pressing issue: [housing](https://www.moabtimes.com/articles/study-half-of-moabites-cant-afford-housing/)
-    * [One of the most respected educators](https://www.moabtimes.com/articles/the-lives-touched-by-margaret-hopkin/) Moab has ever had
-    * [A school investigation](https://www.moabtimes.com/articles/school-business-administrator-resigns-amid-investigation/) into claims of sexual harassment against the district's business administrator
-* I created, managed, and [won an award]({% link the-blog/_posts/2020-06-15-moabtimes-com-wins-first.md %}) for the newspaper’s previous website.
+    * The lack of [action](https://www.moabtimes.com/articles/roughly-half-of-moabs-2017-housing-plan-is-incomplete/) and [leadership](https://www.moabtimes.com/articles/officials-say-moab-needs-leadership-on-housing/) on [Moab's housing issues](https://www.moabtimes.com/articles/study-half-of-moabites-cant-afford-housing/), along with how [proven solutions would work locally](https://www.moabtimes.com/articles/housing-is-moab-reaping-what-it-sowed/).
+    * [The nonavailability of oil and gas](https://www.moabtimes.com/articles/does-sand-flats-even-have-any-oil/) beneath a local recreation area that was nominated for drilling.
+    * [A school investigation](https://www.moabtimes.com/articles/school-business-administrator-resigns-amid-investigation/) into claims of sexual harassment against the district's business administrator.
+    * [One of the most respected educators](https://www.moabtimes.com/articles/the-lives-touched-by-margaret-hopkin/) Moab has had.
 
 ### Reporter at _[The Journal]_
 
-#### September 2018 - November 2018
+#### September 2018 - November 2018 (3 months)
 
 * Reported on city government, education, news from the nearby town of Mancos, and other local topics.
 * Produced [a series][CKMS series] about a local public charter school facing financial and leadership distress.
@@ -44,7 +47,7 @@ I have done extensive web development and software engineering, priming me for w
 
 ### Editor and Producer of [Praeci]
 
-#### September 2017 – May 2018
+#### September 2017 – May 2018 (9 months)
 
 * Won NC State Student Involvement's [2018 Model the Way award]({% link awards.html %}#model-the-way-2018) for general excellence.
 * Created 40-minute podcast episodes on NC State news and stories, including a focus on topics of diversity and inclusion through the podcast series [Protected Class].
@@ -59,7 +62,7 @@ I have done extensive web development and software engineering, priming me for w
 
 ### News Editor at _[Technician]_
 
-#### April 2017 – September 2017
+#### April 2017 – September 2017 (6 months)
 
 * Provided editorial and managerial [leadership][vision article] to the news team of NC State's student newspaper.
 * Recruited and retained record number of new student correspondents.
@@ -74,7 +77,7 @@ I have done extensive web development and software engineering, priming me for w
 
 ### Reporter at _Technician_
 
-#### January 2017 – April 2017
+#### January 2017 – April 2017 (4 months)
 
 * [Reported][SG Reporting] on NC State student government.
 * Produced series on topics including [student activism].
@@ -87,7 +90,7 @@ I have done extensive web development and software engineering, priming me for w
 
 ### Various programming jobs
 
-#### July 2012 - August 2017
+#### July 2012 - August 2017 (5 years, 1 month)
 
 * In my first internship, I created a server that propagated timesheet data to three billing websites.
 * I helped to create a website for intra-company, collaborative learning at [I-Cubed][I-Cubed acquired].
@@ -131,7 +134,7 @@ I have done extensive web development and software engineering, priming me for w
 
 ### Volunteer for [SATELLITE] at NC State
 
-#### May 2017 - May 2018
+#### May 2017 - May 2018 (1 year)
 
 * SATELLITE introduces North Carolina high school students from underserved parts of the state to college opportunities, focused in STEM topics and hosted at NC State. SATELLITE is organized and run by students of NC State, through the Caldwell Fellows Program.
 * Joined the program as a camp counselor in 2017, then worked to provide meals for SATELLITE campers and volunteers in its 21st year.
