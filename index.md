@@ -4,10 +4,10 @@ permalink: "/"
 last_updated: "July 5, 2021"
 description: I am a reporter for _The Times-Independent_ in Moab, Utah. Previously, I studied mathematics at North Carolina State University, where I also did student journalism and software development. I grew up in Durham, North Carolina.
 image:
-    path: assets/pages/index/preview/2020-06.jpg
-    alt: Carter Pape takes a photo during a Black Lives Matter protest in Moab in June 2020
-    title: Me photographing a Black Lives Matter protest in Moab in June 2020
-    credit: photo by [Miguel Angel](https://miguelangel.photography)
+    path: assets/pages/index/preview/2021-07.jpg
+    alt: a selfie of Carter Pape, taken with a drone in front of a red rock face
+    credit: Photo by Carter Pape
+    license: CC BY-SA 4.0
 
 seo:
     type: WebSite
