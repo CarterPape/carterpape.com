@@ -4,6 +4,7 @@ award:
     title: Best government or politics story
     position: Winner, 2020
     hash: best-politics-2020
+    color: gold
 
 awardee:
     title: HB 224 authors say Grand’s August amendments satisfy legislative intent

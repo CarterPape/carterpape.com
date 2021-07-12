@@ -3,6 +3,7 @@ award:
     category: College Media Association Film Festival
     title: Best audio documentary
     position: Third place, 2018
+    color: bronze
     hash: best-audio-documentary-2018
 
 awardee:

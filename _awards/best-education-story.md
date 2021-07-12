@@ -4,6 +4,7 @@ award:
     title: Best education story
     hash: best-education-2020
     position: Second place, 2020
+    color: silver
 
 awardee:
     title: Schools urge all parents to sign up for free, reduced meals. Here's why.

@@ -3,6 +3,7 @@ award:
     category: North Carolina State University's Wolfpack Leadership Challenge
     title: Model the Way
     position: Winner, 2018
+    color: gold
     hash: model-the-way-2018
 
 awardee:

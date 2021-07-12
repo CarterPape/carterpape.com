@@ -2,7 +2,7 @@
 layout: "browsing/card-list"
 title: awards
 body-tag-class: awards
-last_updated: "July 5, 2021"
+last_updated: "July 12, 2021"
 
 seo:
     type: CollectionPage
@@ -26,12 +26,18 @@ regenerate: true
         {%- endif -%}
     {%- endcapture -%}
     
-    <div class="card-container">
+    <div
+        class="card-container"
+        id="{{ each_award.award.hash }}"
+    >
+        <div class="award-closeup">
+            {%- include icon.html
+                which="award"
+                color=each_award.award.color
+            -%}
+        </div>
         <div class="card">
-            <p
-                class="preheader balance-text"
-                id="{{ each_award.award.hash }}"
-            >
+            <p class="preheader balance-text">
                 {{- each_award.award.category -}}
             </p>
             <h2

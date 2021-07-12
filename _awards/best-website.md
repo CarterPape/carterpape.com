@@ -4,6 +4,7 @@ award:
     title: Best website
     position: Winner, 2019
     hash: best-website-2019
+    color: gold
 
 awardee:
     title: moabtimes.com

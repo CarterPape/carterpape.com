@@ -4,6 +4,7 @@ award:
     title: Best general news story
     hash: best-general-2020
     position: Second place, 2020
+    color: silver
 
 awardee:
     title: Fox Corp. CEO acquires property, rock art along Mill Creek

@@ -4,6 +4,7 @@ award:
     title: Best podcast
     position: Third place, 2018
     hash: best-podcast-2018
+    color: bronze
 
 awardee:
     title: "Protected Class: Moses T. Alexander Greene"
