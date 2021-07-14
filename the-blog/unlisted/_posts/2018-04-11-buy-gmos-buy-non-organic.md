@@ -21,7 +21,7 @@ keywords:
     - golden rice
     - FDA
     - EPA
-redirect_from: "/the-blog/buy-gmos-buy-non-organic"
+redirect_from: "/the-blog/buy-gmos-buy-non-organic/"
 ---
 
 *Special thanks to Morgan Impink for the original draft of this article.*

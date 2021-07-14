@@ -11,7 +11,7 @@ image:
     title: "A screen capture of LabView source code"
     hide_at_top_of_page: true
 
-redirect_from: /the-blog/ten-years-of-programming
+redirect_from: /the-blog/ten-years-of-programming/
 ---
 
 *Note I originally [posted this on Facebook](https://www.facebook.com/carter.pape.12/posts/791217341360306). I posted it days before my birthday, so 10 years is slightly understated. I admit to not remembering the exact date I started.*
