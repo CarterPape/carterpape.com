@@ -1,7 +1,10 @@
 ---
+permalink: /résumé/
 layout: "browsing/single-card"
 title: résumé
 last_updated: "July 12, 2021"
+
+redirect_from: /resume/
 
 seo:
     type: Person

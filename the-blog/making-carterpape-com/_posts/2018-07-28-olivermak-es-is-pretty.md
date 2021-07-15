@@ -241,5 +241,5 @@ This subtle difference (alongside likely differences in philosophy about how bes
 [Pattison's about page]: https://olivermak.es/about/ "Pattison's about page on his website"
 [Pattison's big footnotes example in use]: https://olivermak.es/2014/10/design-better-responsive-code/
 [Pattison's config folder]: https://github.com/opattison/olivermakes/tree/master/_config
-[my résumé]: {% link resume.md %} "my résumé, which is meant to be impressive"
+[my résumé]: {% link résumé.md %} "my résumé, which is meant to be impressive"
 [Unicode arrows]: https://en.wikipedia.org/wiki/Arrow_(symbol)#UnicodeBlocks "the Wikipedia page listing all possible Unicode arrow options"

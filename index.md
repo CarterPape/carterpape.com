@@ -25,7 +25,7 @@ seo:
     * I created and produced the paper's first podcast, _[Dialogue with Technician]_.
 * Producer of [Praeci], which covered NC State and Raleigh news
     * Through Praeci, I independently produced two podcast series.
-* Twelve years of [programming experience]({% link the-blog/_posts/2020-02-05-ten-years-of-programming.md %}), nine of which have been [in the workplace]({% link resume.md %}#various-programming-jobs)
+* Twelve years of [programming experience]({% link the-blog/_posts/2020-02-05-ten-years-of-programming.md %}), nine of which have been [in the workplace]({% link résumé.md %}#various-programming-jobs)
     * I have extensive web development and software engineering experience.
 * [Drone pilot]({% link drone-work.md %}) licensed for commercial flight
     * I earned my [Part 107 authorization](https://www.faa.gov/uas/commercial_operators/) in May 2020 and have logged 17 hours of flight to date.
