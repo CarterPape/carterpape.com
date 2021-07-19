@@ -9,7 +9,7 @@ awards:
     hash: best-website-2019
 ---
 
-[`moabtimes.com`](https://moabtimes.com) is _The Times-Independent_'s website. Prior to May 2020, I maintained the website after developing it myself and won and award for doing so.
+[`moabtimes.com`](https://moabtimes.com) is _The Times-Independent_'s website. Prior to May 2020, I maintained the website after developing it myself and won an award for doing so.
 
 Although the content on the site is protected by copyright, the source code from the previous iteration of the site (namely, the WordPress theme, called [RedRock](https://github.com/the-times-independent/RedRock)) has [an open source license](https://github.com/the-times-independent/RedRock/blob/master/LICENSE.md).
 
