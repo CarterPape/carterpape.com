@@ -24,6 +24,9 @@ keywords:
     - secret conversations
     - Facebook Messenger
     - Messenger
+
+redirect_from:
+    - /blog/decompiling-facebook/whatsapp-and-facebook-just-dont-mix
 ---
 
 I'll begin near the end, with the departure of WhatsApp's founders from Facebook after they got acquired by the tech giant. From Elizabeth Dwoskin's story in *The Washington Post* published April 30, 2018, [_WhatsApp founder plans to leave after broad clashes with parent Facebook_]({{ page.ext-link }}):
