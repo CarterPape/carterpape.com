@@ -102,7 +102,7 @@ Local news sites sometimes syndicate non-local stories from national outlets to 
 
 Using [Amazon Lightsail](https://aws.amazon.com/lightsail/) is not the most surgical approach to web service; it's not exactly a one-size-fits-all solution, but it is closer to that than a modular approach, so it is simple and low-maintenance.
 
-While I was building and maintaining `moabtimes.com` (and, by choice, not being paid extra for it), I was also working as [a full-time reporter](https://www.moabtimes.com/author/carter-pape/). This meant I needed ways to use less of my brain thinking about the website, but I had to do so in a way that didn't sacrifice on the level of service the site provided to the reader. Amazon Lightsail offered that solution.
+While I was building and maintaining `moabtimes.com` (and, by choice, not being paid extra for it), I was also working as [a full-time reporter](https://www.moabtimes.com/?s=Carter+Pape). This meant I needed ways to use less of my brain thinking about the website, but I had to do so in a way that didn't sacrifice on the level of service the site provided to the reader. Amazon Lightsail offered that solution.
 
 A more ideal solution would have been to use [Amazon Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) to serve the website for scalability and modularity purposes. If the site was hit with a flood of traffic, more servers could spin up to ensure page speeds remained high. If a server had gone down (which started happening during the transition to the new site for reasons that are still unclear to me), it would automatically get replaced with a healthy server. A whole host of other benefits come of using Beanstalk, but a few key benefits came with using a simpler solution, as well.
 
@@ -150,7 +150,7 @@ The 2019 version of `moabtimes.com` is a project of which I am very proud and on
     
     Since web locations can change on a regular basis, Internet Archive does not settle for archiving what it finds at a specific URL once; it revisits the URL in some cases [hundreds of times per day](https://web.archive.org/web/*/nytimes.com), capturing what it looked like at many specific moments and how it changed over time.
 
-[^rural-broadband]: I have [written very minimally](https://www.moabtimes.com/article/where-is-broadband-available-in-moab/) about this topic before based on [a state map of broadband internet availability](https://mapserv.utah.gov/broadband/#/route/minDownSpeed=4&minUpSpeed=7&transTypes=40%7C41%7C10%7C20%7C30%7C50%7C70%7C71&extent=-12196644%7C4651808%7C577791). My experience is that mobile wireless coverage is not nearly as extensive as the map depicts.
+[^rural-broadband]: I have [written very minimally](https://www.moabtimes.com/article/where-is-broadband-available-in-moab/) about this topic before based on [a state map of broadband internet availability](https://broadband.ugrc.utah.gov/#/route/minDownSpeed%3D4%26minUpSpeed%3D7%26transTypes%3D40%7C41%7C10%7C20%7C30%7C50%7C70%7C71%26extent%3D-12196644%7C4651808%7C577791). My experience is that mobile wireless coverage is not nearly as extensive as the map depicts.
 
 [^Cloudflare-rankings]:
     Here are a list of sources that rank Cloudflare against other content delivery networks and domain name systems:
