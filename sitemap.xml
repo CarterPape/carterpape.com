@@ -4,6 +4,8 @@ sitemap:
     exclude: true
 regenerate: true
 ---
+{%- assign i_just_want_nice_formatting_without_errors = "" -%}
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     {%- for each_post in site.posts -%}
@@ -11,8 +13,10 @@ regenerate: true
             each_post.published == false
             or each_post.unlisted == true
             or each_post.sitemap.exclude == true
+            or each_page.sitemap == false
         -%}
             <url>
+                {{- i_just_want_nice_formatting_without_errors -}}
                 <loc>{{ each_post.url | absolute_url | xml_escape }}</loc>
                 {%- if each_post.last_modified -%}
                     <lastmod>{{ each_post.last_modified | date_to_xmlschema }}</lastmod>
@@ -24,9 +28,11 @@ regenerate: true
         {%- unless
             each_page.published == false
             or each_page.sitemap.exclude == true
+            or each_page.sitemap == false
             or each_page.name == "feed.xml"
         -%}
             <url>
+                {{- i_just_want_nice_formatting_without_errors -}}
                 <loc>{{ each_page.url | absolute_url | xml_escape }}</loc>
                 {%- if each_page.last_modified -%}
                     <lastmod>{{ each_page.last_modified | date_to_xmlschema }}</lastmod>
