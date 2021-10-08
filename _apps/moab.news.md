@@ -3,9 +3,9 @@ title: moab.news
 _url: https://moab.news
 ---
 
-`moab.news` is basically a daily blog that I write for myself, my family, my close friends, and my boss.
+`moab.news` is basically just a digital scratch pad for myself.
 
-It's a place for me to put draft stories, partial stories, lists of links, documents, and anything else I need or want to aggregate in the process of reporting.
+It's a place for me to plan, write drafts, write partial stories, list links, aggregate documents, and do anything else I need or want in the process of reporting.
 
 It's also an outlet for formatting my own stories online. I don't get to control the look and feel of [*The Times-Independent*'s website](https://moabtimes.com), but I do get to control the look and feel of `moab.news`.
 
