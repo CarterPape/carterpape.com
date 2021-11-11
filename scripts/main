@@ -102,7 +102,10 @@ check_names () {
 }
 
 purge_htmlproofer_cache_of_internal_links() {
-    gsed -i 's ,"\(/\|#\)[^"]*":{[^}]*}  g' "$project_dir_path/tmp/.htmlproofer/cache.log"
+    cache_file="$project_dir_path/tmp/.htmlproofer/cache.log"
+    if [[ -f "$cache_file" ]]; then
+        gsed -i 's ,"\(/\|#\)[^"]*":{[^}]*}  g' "$cache_file"
+    fi
 }
 
 proof_html () {
