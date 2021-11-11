@@ -19,8 +19,8 @@ group :jekyll_plugins do
     gem "jekyll-twitter-plugin"
     gem "jekyll-image-size"
     gem "jekyll-sass-converter",
-        github: "ntkme/jekyll-sass-converter",
-        branch: "main"
+        github: "jekyll/jekyll-sass-converter",
+        branch: "master"
     gem "jekyll-reduce-title-redundancy",
         github: "CarterPape/jekyll-reduce-title-redundancy",
         branch: "master"
@@ -39,3 +39,4 @@ gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "classifier-reborn"
 gem "webrick"
 gem "html-proofer"
+gem "sass-embedded"
