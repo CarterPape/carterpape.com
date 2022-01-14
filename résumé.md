@@ -2,7 +2,7 @@
 permalink: /résumé/
 layout: "browsing/single-card"
 title: résumé
-last_updated: "July 12, 2021"
+last_updated: "Jan. 14, 2022"
 
 redirect_from: /resume/
 
@@ -12,9 +12,9 @@ seo:
 
 ## profile
 
-I am a reporter for The Times-Independent in Moab, Utah, where I have won statewide awards for both my journalism and my web development work.
+I am a reporter for _American Banker_ living in Corvallis, Oregon. I have previously reported from Utah, Colorado, and North Carolina.
 
-I have previously reported from North Carolina and Colorado. I have three years of professional experience in the field, one year of experience in student journalism, five years in software development, and four additional years of side work in programming.
+I have three years of professional experience in the field of journalism, one year of experience in student journalism, five years in software development, and four additional years of side work in programming.
 
 Currently, my long-term career goal is to return to my hometown of Durham, North Carolina to manage a digital news media nonprofit to give back to the community that raised me and push the field forward.
 
@@ -22,17 +22,23 @@ Currently, my long-term career goal is to return to my hometown of Durham, North
 
 [My LinkedIn profile](https://www.linkedin.com/in/{{ site.data.authors[site.author].linkedin }}/){:data-proofer-ignore="true" title="This link might be broken."} provides a comprehensive list of my work experiences. Below is a selection of those jobs:
 
+### Technology Reporter at _[American Banker](https://www.americanbanker.com)_
+
+#### January 2022 - now
+
+* I report on cybersecurity in the financial technology space.
+
 ### Reporter at _[The Times-Independent](https://moabtimes.com/)_
 
-#### January 2019 - now (2 years, 7 months)
+#### January 2019 - December 2021 (3 years)
 
-* As one of four full-time reporters in the 10,000-person county, I have produced or contributed to the area’s premier public service, government accountability, solutions, and investigative journalism.
+* As one of four full-time reporters in the 10,000-person county, I produced or contributed to the area’s premier public service, government accountability, solutions, and investigative journalism.
 * In lieu of local programming expertise, I singlehandedly created and managed the newspaper's previous website during my first quarter on the job. The site later [won best in class]({% link the-blog/_posts/2020-06-15-moabtimes-com-wins-first.md %}).
-* My reporting has earned awards from the state's press association in the following categories:
+* My reporting earned awards from the state's press association in the following categories:
     * [Local government and politics]({% link awards.html %}#best-politics-2020) for a report on the county's form of government.
     * [Education]({% link awards.html %}#best-education-2020) for a report on the importance of applying for free meals for schoolchildren.
     * [General news]({% link awards.html %}#best-general-2020) for a report on the purchase of cultural artifacts by the CEO of the Fox Corporation.
-* My journalism has also highlighted:
+* My journalism also highlighted:
     * The lack of [action](https://www.moabtimes.com/articles/roughly-half-of-moabs-2017-housing-plan-is-incomplete/) and [leadership](https://www.moabtimes.com/articles/officials-say-moab-needs-leadership-on-housing/) on [Moab's housing issues](https://www.moabtimes.com/articles/study-half-of-moabites-cant-afford-housing/), along with how [proven solutions would work locally](https://www.moabtimes.com/articles/housing-is-moab-reaping-what-it-sowed/).
     * [The nonavailability of oil and gas](https://www.moabtimes.com/articles/does-sand-flats-even-have-any-oil/) beneath a local recreation area that was nominated for drilling.
     * [A school investigation](https://www.moabtimes.com/articles/school-business-administrator-resigns-amid-investigation/) into claims of sexual harassment against the district's business administrator.
