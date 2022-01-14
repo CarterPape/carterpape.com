@@ -2,4 +2,5 @@
 title: Doug McMurdo
 ---
 
-My editor at my current employer
+Editor at _[The Times-Independent](https://www.moabtimes.com)_  
+Previously, my manager

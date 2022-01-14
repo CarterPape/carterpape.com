@@ -53,7 +53,7 @@ collections:
         output: false
         order:
             - doug.md
-            - zane.md
+            - molly.md
             - jamie.md
             - jonathan.md
     photography:
