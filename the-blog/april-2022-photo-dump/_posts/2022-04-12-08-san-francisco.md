@@ -9,8 +9,6 @@ image:
 
 I went to visit Josh in San Francisco. I also surprised Chatham, and then Mitch surprised me by showing up.
 
-*Note: While some of the photos on this page have a Creative Commons license, others are not licensed for reuse. The terms for each photo are contained in the caption below it.*
-
 {% for each_file in site.static_files -%}
     {%- if each_file.path
         contains "/assets/posts/2022-04-12-photo-dump/2022-04-12-08-san-francisco/"

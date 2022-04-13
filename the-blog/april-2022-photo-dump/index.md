@@ -15,8 +15,6 @@ regenerate: true
 
 {{ page.description }}
 
-*Note: While some of the photos in this photo dump have a Creative Commons license, others are not licensed for reuse. The terms for each photo are contained in the caption below it.*
-
 {% for each_post in photo_dump reversed %}
     {%- include post/preview.html the_post=each_post -%}
 {% endfor %}
