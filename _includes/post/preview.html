@@ -6,7 +6,7 @@
     {%- assign formatted_date=the_post.date | date: '%B %-d, %Y' -%}
     {%- assign length=the_post.content | number_of_words | append: " words" -%}
     
-    <div class="card-container">
+    <main class="card-container">
         <article class="card post-preview">
             <h2 class="post-title balance-text">
                 <a href="{{ the_post.url }}">{{ title }}</a>
@@ -32,9 +32,12 @@
             <div class="post-meta">
                 <time class="post-date" datetime="{{ datetime }}">
                     {{- formatted_date -}}
-                </time>&nbsp;&nbsp;&nbsp;—&nbsp;
-                <span class="post-words">{{ length }}</span>
+                </time>
+                {%- unless the_post.hide_word_count == true -%}
+                    &nbsp;&nbsp;&nbsp;—&nbsp;
+                    <span class="post-words">{{ length }}</span>
+                {%- endunless -%}
             </div>
         </article>
-    </div>
+    </main>
 {%- endif -%}

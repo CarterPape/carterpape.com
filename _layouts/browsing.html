@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="root-container for-browsing">
     {%- include masthead.html -%}
-    <div class="main-container">
+    <main class="main-container">
         {{ content }}
         {%- if page.last_updated -%}
             <p class="last-updated-text">
@@ -11,5 +11,5 @@ layout: default
                 {{ page.last_updated }}
             </p>
         {%- endif -%}
-    </div>
+        </main>
 </div>
