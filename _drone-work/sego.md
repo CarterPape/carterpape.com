@@ -8,6 +8,6 @@ title: Sego
     caption = "near Sego, Utah"
     alt = "a dilapidated structure of a path near Sego, Utah"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "CC BY-SA 4.0"
 %}

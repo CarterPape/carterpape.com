@@ -6,7 +6,7 @@ date: 2020-02-05 11:08 -07:00
 image:
     path: "/assets/posts/legacy/labview-cli-write-code-example.png"
     caption: "A screen capture of LabView source code"
-    credit: "[Photo](https://www.wiresmithtech.com/articles/what-is-labview-and-why-do-i-care/) copyright [Wiresmith Technology Ltd.](https://www.wiresmithtech.com)"
+    credit: "[photo](https://www.wiresmithtech.com/articles/what-is-labview-and-why-do-i-care/) copyright [Wiresmith Technology Ltd.](https://www.wiresmithtech.com)"
     alt: "A screenshot of LabView source code, showing virtual boxes connected by virtual wires, some of the wires different, vibrant colors"
     title: "A screen capture of LabView source code"
     hide_at_top_of_page: true
@@ -29,7 +29,7 @@ He still, by the way, uses LabView to create projects that have no business bein
 {% endcapture %}
 
 {% capture caption %}
-a screen capture of LabView source code *[Photo](https://www.wiresmithtech.com/articles/what-is-labview-and-why-do-i-care/) copyright [Wiresmith Technology Ltd.](https://www.wiresmithtech.com)*{:.credit}
+a screen capture of LabView source code *[photo](https://www.wiresmithtech.com/articles/what-is-labview-and-why-do-i-care/) copyright [Wiresmith Technology Ltd.](https://www.wiresmithtech.com)*{:.credit}
 {% endcapture %}
 
 {% include authoring/figure.html
@@ -54,7 +54,7 @@ The way that the program worked was that, for each pixel in a photo, the program
 {% endcapture %}
 
 {% capture caption %}
-an image of visual noise *Photo by Carter Pape, [no rights reserved](https://creativecommons.org/share-your-work/public-domain/cc0/)*{:.credit}
+an image of visual noise *photo by Carter Pape, [no rights reserved](https://creativecommons.org/share-your-work/public-domain/cc0/)*{:.credit}
 {% endcapture %}
 
 {% include authoring/figure.html

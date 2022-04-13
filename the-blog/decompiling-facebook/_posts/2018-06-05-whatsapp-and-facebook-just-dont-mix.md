@@ -4,7 +4,7 @@ description: "The tension in the story of Facebook and WhatsApp is a close paral
 
 image:
     path: /assets/posts/legacy/WhatsApp+preview.png
-    credit: by Carter Pape
+    credit: photo by Carter Pape
     license: CC BY-SA 4.0
     alt: WhatsApp, Facebook, and Messenger open on a phone screen
 

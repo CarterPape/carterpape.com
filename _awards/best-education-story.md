@@ -18,7 +18,7 @@ proof:
     image_path = "assets/collections/journalism/preview/cdc-r2Tr3du99DM-unsplash.jpg"
     alt = "a young boy places sweet potato fries on his lunch plate in a school cafeteria line"
     is_decorative = false
-    credit = "Photo by [CDC](https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/school-cafeteria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+    credit = "photo by [CDC](https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/school-cafeteria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 %}
 
 This story about meal and community-based subsidies came at a time during the pandemic when the U.S. Department of Agriculture vastly expanded meal subsidies for schoolchildren.

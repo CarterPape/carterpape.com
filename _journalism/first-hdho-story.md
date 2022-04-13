@@ -7,7 +7,7 @@ _url: https://www.moabtimes.com/articles/a-new-conflict-could-cost-grand-hundred
     image_path = "assets/collections/journalism/preview/HDHO.jpeg"
     alt = "aerial view of the Peak View Subdivision in Spanish Valley, south of Moab, Utah"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "exclusive use"
 %}
 

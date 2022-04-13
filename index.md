@@ -6,7 +6,7 @@ description: I am a reporter for _American Banker_ living in Corvallis, Oregon. 
 image:
     path: assets/pages/index/preview/2021-07.jpg
     alt: a selfie of Carter Pape, taken with a drone in front of a red rock face near Moab, Utah
-    credit: Photo by Carter Pape
+    credit: photo by Carter Pape
     license: CC BY-SA 4.0
 
 seo:

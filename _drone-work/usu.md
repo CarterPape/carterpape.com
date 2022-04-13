@@ -7,6 +7,6 @@ title: USU
     link = "assets/collections/drone-work/full-res/usu.jpg"
     caption = "A worker with Hogan Construction secures the final support beam during construction of the Utah State University at Moab campus."
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "exclusive use"
 %}

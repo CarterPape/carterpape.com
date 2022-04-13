@@ -18,7 +18,7 @@ proof:
     image_path = "assets/collections/journalism/preview/county.jpeg"
     alt = "the Grand County Courthouse building"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "exclusive use"
 %}
 

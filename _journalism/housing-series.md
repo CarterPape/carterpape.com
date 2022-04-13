@@ -7,7 +7,7 @@ _path: the-blog/_posts/2021-07-05-housing-series.md
     image_path = "assets/posts/2021-07-05-housing-series/preview/DJI_0783.jpg"
     alt = "aerial view of Cinema Court Apartments, with neighboring single-family homes in the background"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "CC BY-SA 4.0"
 %}
 

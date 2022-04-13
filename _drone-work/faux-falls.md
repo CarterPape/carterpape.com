@@ -8,6 +8,6 @@ title: Faux Falls
     caption = "Faux Falls and Ken's Lake, near Moab, Utah"
     alt = "aerial showing water flowing down Faux Falls toward Ken's Lake, south of Moab, Utah"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "CC BY-SA 4.0"
 %}

@@ -8,6 +8,6 @@ title: Navajo Rocks
     caption = "near Navajo Rocks bike trail in Grand County, Utah"
     alt = "textured sandstone mesa"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "CC BY-SA 4.0"
 %}

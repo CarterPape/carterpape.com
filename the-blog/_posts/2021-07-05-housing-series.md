@@ -3,7 +3,7 @@ description: The five-week series dug into the solutions that exist for alleviat
 
 image:
     path: assets/posts/2021-07-05-housing-series/preview/DJI_0783.jpg
-    credit: Photo by Carter Pape
+    credit: photo by Carter Pape
     license: CC BY-SA 4.0
     caption: Cinema Court Apartments, the buildings with red roofs here, are among the only apartment-style housing units in Moab. Most housing within city limits is single-family, such as the houses neighboring the apartment complex.
     alt: aerial view of Cinema Court Apartments, with neighboring single-family homes in the background

@@ -5,7 +5,7 @@ date: 2020-04-09 02:33 -06:00
 
 image:
     path: "/assets/posts/legacy/florian-klauer-mk7D-4UCfmg-unsplash.jpg"
-    credit: "Photo by <a href='https://unsplash.com/@florianklauer'>Florian Klauer</a> on <a href='https://unsplash.com'>Unsplash</a>"
+    credit: "photo by <a href='https://unsplash.com/@florianklauer'>Florian Klauer</a> on <a href='https://unsplash.com'>Unsplash</a>"
     alt: an old, German typewriter
 redirect_from: /the-blog/introducing-newsbot/
 redirect_from: /newsbot/

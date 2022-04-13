@@ -8,7 +8,7 @@ image:
     caption: "An [archived view](https://web.archive.org/web/20191213143945/https://moabtimes.com/) of [moabtimes.com](https://moabtimes.com) from Dec. 13, 2019."
     alt: "An archived view of moabtimes.com from Dec. 13, 2019."
     title: "An archived view of moabtimes.com from Dec. 13, 2019."
-    credit: Photo by Carter Pape
+    credit: photo by Carter Pape
     license: CC BY-SA 4.0
 ---
 

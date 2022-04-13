@@ -5,7 +5,7 @@ date: 2018-07-23 20:39:00 -0400
 
 image:
     path: /assets/posts/legacy/write-render.png
-    credit: by Carter Pape
+    credit: image by Carter Pape
     license: CC BY-SA 4.0
     alt: a render of write, the app, showing a text editor with formatted Markdown
 

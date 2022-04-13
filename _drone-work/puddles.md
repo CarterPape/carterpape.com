@@ -8,6 +8,6 @@ title: Puddles
     caption = "near Highway 313 in Grand County, Utah"
     alt = "circular puddles of sandy water sit in on red sandstone"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "CC BY-SA 4.0"
 %}

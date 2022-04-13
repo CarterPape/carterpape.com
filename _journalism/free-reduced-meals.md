@@ -13,7 +13,7 @@ awards:
     image_path = "assets/collections/journalism/preview/cdc-r2Tr3du99DM-unsplash.jpg"
     alt = "a child gets lunch at a school cafeteria"
     is_decorative = false
-    credit = "Photo by [CDC](https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/school-cafeteria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+    credit = "photo by [CDC](https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/school-cafeteria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 %}
 
 In Grand County, as in many places, there can be a stigma attached to qualifying your child for free and reduced meals. Parents benefit the community at large when they apply anyway.

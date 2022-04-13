@@ -13,7 +13,7 @@ awards:
     image_path = "assets/collections/journalism/preview/Mill Creek.jpg"
     alt = "two houses sit in the shadows in Mill Creek near Moab, Utah"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "CC BY-SA 4.0"
 %}
 

@@ -13,7 +13,7 @@ awards:
     image_path = "assets/collections/journalism/preview/county.jpeg"
     alt = "Grand County Courthouse"
     is_decorative = false
-    credit = "Photo by Carter Pape"
+    credit = "photo by Carter Pape"
     license = "exclusive use"
 %}
 
