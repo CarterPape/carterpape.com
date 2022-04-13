@@ -20,7 +20,7 @@ seo:
 ## highlights
 
 * Technology reporter for _[American Banker]_
-    * I report on cybersecurity in the financial technology space.
+    * I (mostly) report on the cybersecurity of banking.
 * Previously, reporter for _[The Times-Independent]_
     * I reported on county government, the local impact of COVID-19, tourism, business, and other topics.
 * Previously, news editor of _[Technician]_

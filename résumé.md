@@ -26,7 +26,7 @@ Currently, my long-term career goal is to return to my hometown of Durham, North
 
 #### January 2022 - now
 
-* I report on cybersecurity in the financial technology space.
+* I (mostly) report on the cybersecurity of banking.
 
 ### Reporter at _[The Times-Independent](https://moabtimes.com/)_
 
