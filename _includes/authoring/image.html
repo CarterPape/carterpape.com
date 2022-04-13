@@ -1,3 +1,40 @@
+{%- assign caption = nil -%}
+{%- assign credit = nil -%}
+{%- assign license = nil -%}
+{%- assign license_link = nil -%}
+{%- assign custom_license = nil -%}
+{%- assign xmp_creator = nil -%}
+{%- assign xmp_license = nil -%}
+{%- assign xmp_license_link = nil -%}
+{%- assign html_content = nil -%}
+{%- assign html_caption = nil -%}
+
+{%- if include.use_xmp -%}
+    {%- capture xmp_creator -%}
+        {%- xmp
+            file_path = include.image_path
+            property_namespace = "dc"
+            property_name = "creator"
+        -%}
+    {%- endcapture -%}
+    
+    {%- capture xmp_license -%}
+        {%- xmp
+            file_path = include.image_path
+            property_namespace = "xmpRights"
+            property_name = "UsageTerms"
+        -%}
+    {%- endcapture -%}
+    
+    {%- capture xmp_license_link -%}
+        {%- xmp
+            file_path = include.image_path
+            property_namespace = "xmpRights"
+            property_name = "WebStatement"
+        -%}
+    {%- endcapture -%}
+{%- endif -%}
+
 {%- if include.alt -%}
     {%- assign alt = include.alt -%}
 {%- elsif include.is_decorative != true -%}
@@ -13,12 +50,18 @@
         include.credit
         | rstrip
     -%}
-{%- else -%}
-    {%- assign credit = nil -%}
+{%- elsif xmp_creator -%}
+    {%- assign credit = xmp_creator | prepend: 'photo by ' -%}
 {%- endif -%}
 
 {%- if include.license -%}
-    {%- if include.credit -%}
+    {%- assign license = include.license -%}
+{%- elsif xmp_license -%}
+    {%- assign license = xmp_license -%}
+{%- endif -%}
+
+{%- if license -%}
+    {%- if credit -%}
         {%- assign credit = 
             credit
             | append: ", "
@@ -27,17 +70,14 @@
         {%- assign credit = "" -%}
     {%- endif -%}
     
-    {%- assign license = include.license -%}
-    {%- assign custom_license = nil -%}
-    
     {%- if include.license_link -%}
         {%- assign license_link = include.license_link -%}
-    {%- elsif include.license == "exclusive use" -%}
+    {%- elsif license == "exclusive use" -%}
         {%- assign license = "for exclusive use" -%}
         {%- capture license_link -%}
             {%- link legalese.md -%}#exclusive-use
         {%- endcapture -%}
-    {%- elsif include.license == "CC BY-SA 4.0" -%}
+    {%- elsif license == "CC BY-SA 4.0" -%}
         {%- assign license_link = "https://creativecommons.org/licenses/by-sa/4.0/"
         -%}
     {%- else -%}
@@ -52,6 +92,15 @@
                 | append: license
                 | append: "]("
                 | append: license_link
+                | append: ")"
+            -%}
+        {%- elsif xmp_license_link and xmp_license_link != "" -%}
+            {%- assign credit =
+                credit
+                | append: "["
+                | append: license
+                | append: "]("
+                | append: xmp_license_link
                 | append: ")"
             -%}
         {%- else -%}
@@ -100,12 +149,10 @@
     {%- capture caption -%}
         {{ include.caption }} *{{ credit }}*{:.credit}
     {%- endcapture -%}
-{%- elsif caption -%}
+{%- elsif include.caption -%}
     {%- capture caption -%}
         {{ include.caption }}
     {%- endcapture -%}
-{%- else -%}
-    {%- assign caption = false -%}
 {%- endif -%}
 
 {%- if caption -%}
@@ -113,8 +160,6 @@
         caption
         | markdownify
     -%}
-{%- else -%}
-    {%- assign html_caption = false -%}
 {% endif %}
 
 {%- include authoring/figure.html
