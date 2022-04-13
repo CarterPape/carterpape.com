@@ -6,6 +6,10 @@ layout: "browsing/card-list"
 title: "Sights of the past nine months"
 description: "Instagram is stupid. Here is what I've seen recently, on my very own website."
 
+image:
+    path: "assets/posts/2022-04-12-photo-dump/2022-04-12-05-snowshoe/006-lorax.jpeg"
+    use_xmp: true
+
 seo:
     type: Blog
 regenerate: true
