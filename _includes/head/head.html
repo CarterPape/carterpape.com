@@ -15,13 +15,16 @@
     />
     
     {%- seo -%}
-    
+    {%- capture now -%}
+        {{- "now" | date: "%Y-%m-%dT%H_%M" -}}
+    {%- endcapture -%}
     <link
         href="
             {{-
                 'assets/style/main.css'
                 | relative_url
-                | append: '?v=2022-04-12T18:20'
+                | append: '?v='
+                | append: now
             -}}
         "
         rel="stylesheet"
@@ -31,7 +34,8 @@
             {{-
                 'assets/style/pygment_trac.css'
                 | relative_url
-                | append: '?v=2021-06-14T00:17'
+                | append: '?v='
+                | append: now
             -}}
         "
         rel="stylesheet"
@@ -79,7 +83,8 @@
             {{-
                 'assets/generated/main.js'
                 | relative_url
-                | append: '?v=2021-07-06T11:27'
+                | append: '?v='
+                | append: now
             -}}
         "
         defer

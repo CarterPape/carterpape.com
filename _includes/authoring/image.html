@@ -8,6 +8,7 @@
 {%- assign xmp_license_link = nil -%}
 {%- assign html_content = nil -%}
 {%- assign html_caption = nil -%}
+{%- assign original_image_url = nil -%}
 
 {%- if include.use_xmp -%}
     {%- capture xmp_creator -%}
@@ -121,6 +122,18 @@
     {%- endif -%}
 {%- endif -%}
 
+{%- capture original_image_url -%}
+    {%- if include.image_url -%}
+        {{- include.image_url -}}
+    {%- elsif include.image_path -%}
+        {%- if site.env != "production" -%}
+            {{- include.image_path | relative_url | prepend: "https://carterpape.com" -}}
+        {%- else -%}
+            {{- include.image_path | absolute_url -}}
+        {%- endif -%}
+    {%- endif -%}
+{%- endcapture -%}
+
 {%- capture html_content -%}
     {%- if include.link -%}
         <a
@@ -129,16 +142,31 @@
         >
     {%- endif -%}
     <div class="img-wrapper">
-        <img
-            {% if include.image_url %}
-                src="{{ include.image_url }}"
-                {% imagesize include.image_url:props %}
-            {% elsif include.image_path %}
-                src="{% link {{ include.image_path }} %}"
-                {% imagesize include.image_path:props %}
-            {% endif %}
-            alt="{{ alt | escape }}"
-        />
+        <picture class="{{site.env}}">
+            <source
+                type="image/webp"
+                srcset="
+                    https://images.weserv.nl?url={{ original_image_url }}&w=560&output=webp&we 1x,
+                    https://images.weserv.nl?url={{ original_image_url }}&w=1120&output=webp&we 2x,
+                    https://images.weserv.nl?url={{ original_image_url }}&w=1680&output=webp&we 3x,
+                    https://images.weserv.nl?url={{ original_image_url }}&w=2240&output=webp&we 4x,
+                "
+            />
+            <source
+                type="image/jpeg"
+                srcset="
+                    https://images.weserv.nl?url={{ original_image_url }}&w=560&we 1x,
+                    https://images.weserv.nl?url={{ original_image_url }}&w=1120&we 2x,
+                    https://images.weserv.nl?url={{ original_image_url }}&w=1680&we 3x,
+                    https://images.weserv.nl?url={{ original_image_url }}&w=2240&we 4x,
+                "
+            />
+            <img
+                {% imagesize original_image_url:props %}
+                src="https://images.weserv.nl?url={{ original_image_url }}&w=560&output=jpg&we"
+                alt="{{ alt | escape }}"
+            />
+        </picture>
     </div>
     {%- if include.link or include.linked_file_name -%}
         </a>
