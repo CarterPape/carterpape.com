@@ -162,7 +162,11 @@
                 "
             />
             <img
-                {% imagesize original_image_url:props?width=560 %}
+                {% if include.image_url %}
+                    {% imagesize include.image_path:props?width=560 %}
+                {% elsif include.image_path %}
+                    {% imagesize include.image_path:props?width=560 %}
+                {% endif %}
                 src="https://images.weserv.nl?url={{ original_image_url }}&w=560&output=jpg&we"
                 alt="{{ alt | escape }}"
             />
