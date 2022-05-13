@@ -5,7 +5,7 @@ image:
     use_xmp: true
 ---
 
-# Portland, Seattle, and Silver State Falls
+# Portland, Seattle, and Silver Falls State Park
 
 I went on a few more adventures in the last month.
 
