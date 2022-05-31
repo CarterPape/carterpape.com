@@ -3,6 +3,8 @@ image:
     path: assets/posts/2022-05-27-nc-visit-photos/20220518_0005.jpeg
     hide_at_top_of_page: true
     use_xmp: true
+
+hide_word_count: true
 ---
 
 # North Carolina and Hyco Lake
