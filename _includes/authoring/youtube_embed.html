@@ -3,13 +3,24 @@
         "&start="
         | append: include.start
     -%}
+{%- else -%}
+    {%- assign start_query_part = "" -%}
+{%- endif -%}
+
+{%- if include.loop -%}
+    {%- assign maybe_loop =
+        "&loop=1&playlist="
+        | append: include.youtube_id
+    -%}
+{%- else -%}
+    {%- assign maybe_loop = "" -%}
 {%- endif -%}
 
 <div class="youtube_embed_wrapper">
     <iframe
         width="560"
         height="349"
-        src="https://www.youtube.com/embed/{{ include.youtube_id }}?modestbranding=1&rel=0{{ start_query_part }}"
+        src="https://www.youtube.com/embed/{{ include.youtube_id }}?modestbranding=1&rel=0{{ start_query_part }}{{ maybe_loop }}"
         frameborder="0"
         allow="
             accelerometer;
