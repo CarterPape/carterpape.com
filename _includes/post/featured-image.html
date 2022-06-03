@@ -31,6 +31,8 @@
         {%- assign caption = nil -%}
     {%- endif -%}
     
+    {%- assign image_path = the_image._path | default: the_image.path -%}
+    
     {%- include authoring/image.html
         link =          include.link
         caption =       caption
@@ -41,7 +43,7 @@
         license =       the_image.license
         linked_file_name = nil
         image_url =     the_image.url
-        image_path =    the_image.path
+        image_path =    image_path
         is_decorative = the_image.is_decorative
         use_xmp =       the_image.use_xmp
     -%}
