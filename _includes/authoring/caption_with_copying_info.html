@@ -1,0 +1,56 @@
+{%- assign caption = include.caption | strip -%}
+{%- assign credit = include.credit | strip -%}
+{%- assign license = include.license | strip -%}
+{%- assign license_link = include.license_link | strip -%}
+{%- assign default_license_link = nil -%}
+{%- assign html_caption = nil -%}
+
+{%- if license and license != "" -%}
+    {%- if credit and credit != "" -%}
+        {%- assign credit = 
+            credit
+            | append: ", "
+        -%}
+    {%- endif -%}
+    
+    {%- if license == "exclusive use" -%}
+        {%- assign license = "for exclusive use" -%}
+        {%- capture default_license_link -%}
+            {%- link legalese.md -%}#exclusive-use
+        {%- endcapture -%}
+    {%- elsif license == "CC BY-SA 4.0" -%}
+        {%- assign default_license_link = "https://creativecommons.org/licenses/by-sa/4.0/" -%}
+    {%- else -%}
+        {% assign default_license_link = nil -%}
+    {%- endif -%}
+    
+    {%- if license_link == "" -%}
+        {%- assign license_link = default_license_link -%}
+    {%- endif -%}
+    
+    {%- if license_link == nil -%}
+        {%- assign credit =
+            credit
+            | append: license
+        -%}
+    {%- elsif license_link == default_license_link -%}
+        {%- assign credit =
+            credit
+            | append: "licensed ["
+            | append: license
+            | append: "]("
+            | append: license_link
+            | append: ")"
+        -%}
+    {%- endif -%}
+{%- endif -%}
+
+{%- if credit and credit != "" -%}
+    {%- capture caption -%}
+        {{- include.caption }} *{{- credit -}}*{:.credit}
+    {%- endcapture -%}
+{%- endif -%}
+
+{%- if caption and caption != "" -%}
+    {{- caption | markdownify -}}
+{% endif %}

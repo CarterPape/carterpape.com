@@ -1,0 +1,13 @@
+.kuula_embed_wrapper {
+    position: relative;
+    margin: 1.5em -1.6em;
+    padding-top: 60%;
+    
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

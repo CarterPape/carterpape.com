@@ -1,0 +1,23 @@
+{%- capture html_content -%}
+    <div class="kuula_embed_wrapper">
+        <script
+            src="https://static.kuula.io/embed.js"
+            data-kuula="https://kuula.co/share/{{- include.arguments.code -}}?logo=0&info=0&fs=1&vr=0&zoom=1&alpha=0.00&initload=0"
+            data-css="ku-embed"
+        ></script>
+    </div>
+{%- endcapture -%}
+
+{%- capture html_caption -%}
+    {%- include authoring/caption_with_copying_info.html
+        caption = include.arguments.caption
+        credit = include.arguments.credit
+        license = include.arguments.license
+        license_link = include.arguments.license_link
+    -%}
+{%- endcapture -%}
+
+{%- include authoring/figure.html
+    html_content =  html_content
+    html_caption =  html_caption
+-%}
