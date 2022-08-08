@@ -33,7 +33,7 @@ However, not only does CommonMark provide a great specification of a common Mark
 
 kramdown is compatible with many of the less extended Markdown standards, and it provides features that CommonMark does not. Tables, footnotes, and attribute lists are a few such examples.[^features-I-use]
 
-Additionally, [Jekyll], a static site generator popularized by [GitHub Pages], uses kramdown as [the default Markdown processor][Jekyll uses kramdown], while GitHub Pages [*only* supports kramdown][GitHub uses kramdown].
+Additionally, [Jekyll], a static site generator popularized by [GitHub Pages], uses kramdown as [the default Markdown processor][Jekyll uses kramdown], while GitHub Pages [*only* supports kramdown][GitHub uses kramdown]{:data-proofer-ignore="true" title="This link might be broken."}.
 
 This make kramdown a well-endorsed and quite popular standard. It also means that I have grown accustomed to using kramdown's features, and I am convinced that many of them should be considered "standard" Markdown features.[^standard-markdown-features]
 

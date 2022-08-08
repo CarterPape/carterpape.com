@@ -52,7 +52,7 @@ A lot of the fruits and vegetables you'll find at your local farmer's market on 
 
 Additionally, organic crops produce smaller yields. This is where the opportunity cost is presented; every acre of land, gallon of water, and harvest season spent on organic farming yields [95 to 66 percent][Seufert paper] the final product that other farming methods with those resources would produce. At large scale, it's harder to turn a tomato seed into a ripened tomato with organic versus conventional farming, presenting another economic cost of organic farming.
 
-This is also what makes organic farming harmful to the environment at large scales; the amount of land that has to be dedicated to feeding a population is considerable to begin with, and incentivizing ineffective use of that land through organic farming presents serious [sustainability concerns][organic sustainability paper].
+This is also what makes organic farming harmful to the environment at large scales; the amount of land that has to be dedicated to feeding a population is considerable to begin with, and incentivizing ineffective use of that land through organic farming presents serious [sustainability concerns][organic sustainability paper]{:data-proofer-ignore="true" title="This link might be broken."}.
 
 And while opportunity costs are presented by organic farming's lower yields, other costs are presented by following the requirements of the United States Department of Agriculture's "organic" certification (which is the de jure American standard for using the "organic" label). GMOs cannot be used in the process of organic farming, meaning that the engineered adaptations of those crops cannot be leveraged by organic farmings.
 

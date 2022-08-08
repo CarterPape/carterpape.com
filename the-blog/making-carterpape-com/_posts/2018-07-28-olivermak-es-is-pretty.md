@@ -5,12 +5,12 @@ date: 2018-07-28 20:39:00 -0400
 
 image:
     path: "assets/posts/legacy/olivermak.es.png"
-    caption: "the [home page](https://olivermak.es) of Oliver Pattison's website ([Oliver Pattison](https://olivermak.es/))"
+    caption: "the [home page](https://web.archive.org/web/20220628200519/https://olivermak.es/) of Oliver Pattison's website"
     alt: "the home page of Oliver Pattison's website"
     title: "the home page of Oliver Pattison's website"
     class: screenshot
     license: image licensed CC BY-NC 4.0
-    license_link: https://olivermak.es/license/
+    license_link: https://web.archive.org/web/20210120163314/https://olivermak.es/license/
 
 tags: [good design]
 keywords:
@@ -26,6 +26,8 @@ keywords:
     - footnotes
     - debugging HTML
 ---
+
+*Note: Oliver has dramatically simplified his website and removed a lot of content from it since I originally published this. All links here are to an archived version of the website I was seeing when I wrote this article.*
 
 A few days ago, I started trying to fix a problem where my footnote backlinks[^this-is-a-backlink] rendered as emoji on iPhones[^this-emoji], herein referred to as my "emoji problem." Originally, I believed that I would have to write a [Jekyll plugin][Jekyll plugins] to fix it; it turned out to be much easier to fix than that.
 
@@ -66,7 +68,7 @@ As I browsed Pattison's website, I was looking for display elements that might b
 {% endcapture %}
 
 {% capture caption %}
-An example of Pattison's use of captions. [See this example on his website here](https://olivermak.es/2017/01/fluid-grid/#using-jekyll-collections). The caption on the code block element shown here is right-aligned to differentiate the text it contains from the body text. ([Oliver Pattison](https://olivermak.es/), [CC BY-NC 4.0](https://olivermak.es/license/))
+An example of Pattison's use of captions. [See this example on his website here](https://web.archive.org/web/20210510190400/https://olivermak.es/2017/01/fluid-grid/#using-jekyll-collections). The caption on the code block element shown here is right-aligned to differentiate the text it contains from the body text. ([Oliver Pattison](https://web.archive.org/web/20220628200519/https://olivermak.es/), [CC BY-NC 4.0](https://web.archive.org/web/20210120163314/https://olivermak.es/license/))
 {% endcapture %}
 
 {% include authoring/screenshot.html
@@ -145,7 +147,7 @@ This means that, as I was attempting to figure out how Pattison was generating c
 {% endcapture %}
 
 {% capture caption %}
-This is a screenshot of one subdirectory of Pattison's `_includes` folder. Imagine sorting through this list of elements without the help of `HTML` comments as you attempt to debug the rendering of a webpage. ([Oliver Pattison](https://olivermak.es/), [MIT](https://olivermak.es/license/))
+This is a screenshot of one subdirectory of Pattison's `_includes` folder. Imagine sorting through this list of elements without the help of `HTML` comments as you attempt to debug the rendering of a webpage. ([Oliver Pattison](https://web.archive.org/web/20220628200519/https://olivermak.es/), [MIT](https://web.archive.org/web/20210120163314/https://olivermak.es/license/))
 {% endcapture %}
 
 {% include authoring/screenshot.html
@@ -178,7 +180,7 @@ This subtle difference (alongside likely differences in philosophy about how bes
 {% endcapture %}
 
 {% capture caption %}
-(left side of image: [Oliver Pattison](https://olivermak.es/), [CC BY-NC 4.0](https://olivermak.es/license/))
+(left side of image: [Oliver Pattison](https://web.archive.org/web/20220628200519/https://olivermak.es/), [CC BY-NC 4.0](https://olivermak.es/license/))
 {% endcapture %}
 
 
@@ -231,15 +233,15 @@ This subtle difference (alongside likely differences in philosophy about how bes
 [GitHub Pages gem]: https://github.com/github/pages-gem "the repository for the GitHub Pages gem"
 [google results for "uglify"]: https://www.google.com/search?q=uglify "Google search results for the term "uglify""
 [Jekyll plugins]: https://jekyllrb.com/docs/plugins/ "Jekyll's documentation explaining how plugins work"
-[Jekyll's list of available plugins]: https://jekyllrb.com/docs/plugins/#available-plugins
+[Jekyll's list of available plugins]: https://web.archive.org/web/20180830013010/https://jekyllrb.com/docs/plugins/#available-plugins
 [kramdown options]: https://kramdown.gettalong.org/rdoc/Kramdown/Options.html "kramdown's documentation listing runtime options"
 [kramdown while making write]: {% link the-blog/making-write/_posts/2018-07-24-what-flavor-do-you-want.md %}#but-kramdown-has-such-attractive-features "part of a previous post where I talk about using kramdown"
-[olivermak.es]: https://olivermak.es/ "Oliver Pattison's website"
-[Pattison on archiving]: https://olivermak.es/labels/archiving/
+[olivermak.es]: https://web.archive.org/web/20220628200519/https://olivermak.es/ "Oliver Pattison's website"
+[Pattison on archiving]: https://web.archive.org/web/20210510191453/https://olivermak.es/labels/archiving/
 [Pattison on big footnotes]: https://github.com/gettalong/kramdown/pull/167#issuecomment-67556623
-[Pattison on getting hired]: https://olivermak.es/hire/ "Pattison's "hire me" page"
-[Pattison's about page]: https://olivermak.es/about/ "Pattison's about page on his website"
-[Pattison's big footnotes example in use]: https://olivermak.es/2014/10/design-better-responsive-code/
+[Pattison on getting hired]: https://web.archive.org/web/20210421051651/https://olivermak.es/hire/ "Pattison's "hire me" page"
+[Pattison's about page]: https://web.archive.org/web/20210302175041/https://olivermak.es/about/ "Pattison's about page on his website"
+[Pattison's big footnotes example in use]: https://web.archive.org/web/20141206031840/http://olivermak.es/2014/10/design-better-responsive-code/
 [Pattison's config folder]: https://github.com/opattison/olivermakes/tree/master/_config
 [my résumé]: {% link résumé.md %} "my résumé, which is meant to be impressive"
 [Unicode arrows]: https://en.wikipedia.org/wiki/Arrow_(symbol)#UnicodeBlocks "the Wikipedia page listing all possible Unicode arrow options"
