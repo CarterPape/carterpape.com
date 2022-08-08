@@ -80,6 +80,7 @@ push () {
     
     # TODO: set the caching headers on all files that need it (maybe with https://s3tools.org/s3cmd)
     # TODO: purge the CloudFlare cache of updated files
+    # TODO: turn _site/redirects into a Cloudflare bulk redirect list
     
     git pull
     git push
@@ -101,28 +102,11 @@ check_names () {
     $dir_path/scripts/check_names.rb $1
 }
 
-purge_htmlproofer_cache_of_internal_links() {
-    cache_file="$project_dir_path/tmp/.htmlproofer/cache.log"
-    if [[ -f "$cache_file" ]]; then
-        gsed -i 's ,"\(/\|#\)[^"]*":{[^}]*}  g' "$cache_file"
-    fi
-}
-
 proof_html () {
-    purge_htmlproofer_cache_of_internal_links
-    
-    htmlproofer $site_path              \
-        --internal_domains $domain      \
-        --assume_extension              \
-        --enforce_https                 \
-        --check_favicon                 \
-        --check_html                    \
-        --check_opengraph               \
-        --check_img_http                \
-        --report_invalid_tags           \
-        --report_missing_names          \
-        --report_eof_tags               \
-        --timeframe 2d
+    htmlproofer $site_path \
+        --checks Links,Images,Scripts,Favicon,OpenGraph \
+        --ignore_missing_alt=true \
+        --cache '{"timeframe": {"external": "2d"}}'
 }
 
 subcommand="${1}" 
