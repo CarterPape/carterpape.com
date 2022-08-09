@@ -1,0 +1,44 @@
+{% assign embed_index = 0 -%}
+{%- for each_file in site.static_files -%}
+    {%- if each_file.path
+        contains include.photo_folder
+    -%}
+        {% if include.sorted_embeds[embed_index].name < each_file.basename -%}
+            {%- assign
+                include_path = include.sorted_embeds[embed_index].include_path
+            -%}
+            {%- assign
+                arguments = include.sorted_embeds[embed_index].arguments
+            -%}
+            {%- include {{ include_path }}
+                arguments = arguments
+            -%}
+            {%- assign embed_index = embed_index | plus: 1 -%}
+            {%- continue -%}
+        {%- endif -%}
+        {%- assign extension = each_file.extname | downcase -%}
+        {%- if extension == '.jpg'
+            or extension == '.jpeg'
+        -%}
+            {%- include authoring/image.html
+                image_path = each_file.path
+                link = each_file.path
+                is_decorative = true
+                use_xmp = true
+            -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
+
+{%- assign last_embed_index = include.sorted_embeds | size | minus: 1 -%}
+{%- for embed_index in (embed_index..last_embed_index) -%}
+    {%- assign
+        include_path = include.sorted_embeds[embed_index].include_path
+    -%}
+    {%- assign
+        arguments = include.sorted_embeds[embed_index].arguments
+    -%}
+    {%- include {{ include_path }}
+        arguments = arguments
+    -%}
+{%- endfor -%}

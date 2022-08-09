@@ -1,0 +1,17 @@
+{% for each_file in site.static_files -%}
+    {%- if each_file.path
+        contains include.photo_folder
+    -%}
+        {%- assign extension = each_file.extname | downcase -%}
+        {%- if extension == '.jpg'
+            or extension == '.jpeg'
+        -%}
+            {%- include authoring/image.html
+                image_path = each_file.path
+                link = each_file.path
+                is_decorative = true
+                use_xmp = true
+            -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
