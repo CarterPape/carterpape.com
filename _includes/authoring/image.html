@@ -5,7 +5,7 @@
 {%- assign license_link = nil -%}
 
 {%- capture original_image_url -%}
-    {%- if include.image_url -%}
+    {%- if include.image_url and include.image_url != nil and include.image_url != "" -%}
         {{- include.image_url -}}
     {%- elsif include.image_path -%}
         {%- if site.env != "production" -%}
@@ -44,8 +44,8 @@
                 "
             />
             <img
-                {% if include.image_url %}
-                    {% imagesize include.image_path:props?width=560 %}
+                {% if include.image_url and include.image_url != nil and include.image_url != "" %}
+                    {% imagesize include.image_url:props?width=560 %}
                 {% elsif include.image_path %}
                     {% imagesize include.image_path:props?width=560 %}
                 {% endif %}
