@@ -106,7 +106,8 @@ proof_html () {
     htmlproofer $site_path \
         --checks Links,Images,Scripts,Favicon,OpenGraph \
         --ignore_missing_alt=true \
-        --cache '{"timeframe": {"external": "2d"}}'
+        --cache '{"timeframe": {"external": "2d"}}' \
+        --swap-urls '^((https?\:)?//)?carterpape\.com:'
 }
 
 subcommand="${1}" 
