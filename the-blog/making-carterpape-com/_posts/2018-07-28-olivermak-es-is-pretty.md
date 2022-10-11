@@ -4,7 +4,7 @@ description: "I stumbled upon a designer's website, and at first it made me real
 date: 2018-07-28 20:39:00 -0400
 
 image:
-    path: "assets/posts/legacy/olivermak.es.png"
+    path: "/assets/posts/legacy/olivermak.es.png"
     caption: "the [home page](https://web.archive.org/web/20220628200519/https://olivermak.es/) of Oliver Pattison's website"
     alt: "the home page of Oliver Pattison's website"
     title: "the home page of Oliver Pattison's website"

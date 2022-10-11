@@ -1,6 +1,6 @@
 ---
 image:
-    path: assets/posts/2022-07-21-photo-dump/20220716_0009.jpeg
+    path: /assets/posts/2022-07-21-photo-dump/20220716_0009.jpeg
     hide_at_top_of_page: true
     use_xmp: true
 

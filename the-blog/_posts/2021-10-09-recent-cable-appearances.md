@@ -1,6 +1,6 @@
 ---
 image:
-    path: assets/posts/2021-10-18-recent-cable-appearances/NewsNation side-by-side.png
+    path: /assets/posts/2021-10-18-recent-cable-appearances/NewsNation side-by-side.png
     credit: Photo via NewsNation
     license: all rights reserved
     caption: I went on Dan Abrams Live at the beginning of the month to talk about body camera footage that we had recently received from the Moab Police Department from the Aug. 12 stop of Gabby Petito and Brian Laundrie.

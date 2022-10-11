@@ -2,7 +2,7 @@
 description: The five-week series dug into the solutions that exist for alleviating upward pressures on prices and the lack of diversity in available housing types in the county.
 
 image:
-    path: assets/posts/2021-07-05-housing-series/preview/DJI_0783.jpg
+    path: /assets/posts/2021-07-05-housing-series/preview/DJI_0783.jpg
     credit: photo by Carter Pape
     license: CC BY-SA 4.0
     caption: Cinema Court Apartments, the buildings with red roofs here, are among the only apartment-style housing units in Moab. Most housing within city limits is single-family, such as the houses neighboring the apartment complex.

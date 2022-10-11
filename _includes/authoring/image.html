@@ -24,35 +24,53 @@
         >
     {%- endif -%}
     <div class="img-wrapper">
-        <picture class="{{site.env}}">
-            <source
-                type="image/webp"
-                srcset="
-                    https://images.weserv.nl?url={{ original_image_url }}&w=560&output=webp&we 1x,
-                    https://images.weserv.nl?url={{ original_image_url }}&w=1120&output=webp&we 2x,
-                    https://images.weserv.nl?url={{ original_image_url }}&w=1680&output=webp&we 3x,
-                    https://images.weserv.nl?url={{ original_image_url }}&w=2240&output=webp&we 4x,
-                "
-            />
-            <source
-                type="image/jpeg"
-                srcset="
-                    https://images.weserv.nl?url={{ original_image_url }}&w=560&we 1x,
-                    https://images.weserv.nl?url={{ original_image_url }}&w=1120&we 2x,
-                    https://images.weserv.nl?url={{ original_image_url }}&w=1680&we 3x,
-                    https://images.weserv.nl?url={{ original_image_url }}&w=2240&we 4x,
-                "
-            />
-            <img
-                {% if include.image_url and include.image_url != nil and include.image_url != "" %}
-                    {% imagesize include.image_url:props?width=560 %}
-                {% elsif include.image_path %}
-                    {% imagesize include.image_path:props?width=560 %}
-                {% endif %}
-                src="https://images.weserv.nl?url={{ original_image_url }}&w=560&output=jpg&we"
-                alt="{{ include.alt | escape }}"
-            />
-        </picture>
+        {%- if jekyll.environment == "development" -%}
+            <picture class="{{jekyll.environment}}">
+                <img
+                    {% if include.image_url
+                        and include.image_url != nil
+                        and include.image_url != ""
+                    %}
+                        {% imagesize include.image_url:props?width=560 %}
+                        src="{{ include.image_url }}"
+                    {% elsif include.image_path %}
+                        {% imagesize include.image_path:props?width=560 %}
+                        src="{{ include.image_path }}"
+                    {% endif %}
+                    alt="{{ include.alt | escape }}"
+                />
+            </picture>
+        {%- else -%}
+            <picture class="{{jekyll.environment}}">
+                <source
+                    type="image/webp"
+                    srcset="
+                        https://images.weserv.nl?url={{ original_image_url }}&w=560&output=webp&we 1x,
+                        https://images.weserv.nl?url={{ original_image_url }}&w=1120&output=webp&we 2x,
+                        https://images.weserv.nl?url={{ original_image_url }}&w=1680&output=webp&we 3x,
+                        https://images.weserv.nl?url={{ original_image_url }}&w=2240&output=webp&we 4x,
+                    "
+                />
+                <source
+                    type="image/jpeg"
+                    srcset="
+                        https://images.weserv.nl?url={{ original_image_url }}&w=560&we 1x,
+                        https://images.weserv.nl?url={{ original_image_url }}&w=1120&we 2x,
+                        https://images.weserv.nl?url={{ original_image_url }}&w=1680&we 3x,
+                        https://images.weserv.nl?url={{ original_image_url }}&w=2240&we 4x,
+                    "
+                />
+                <img
+                    {% if include.image_url and include.image_url != nil and include.image_url != "" %}
+                        {% imagesize include.image_url:props?width=560 %}
+                    {% elsif include.image_path %}
+                        {% imagesize include.image_path:props?width=560 %}
+                    {% endif %}
+                    src="https://images.weserv.nl?url={{ original_image_url }}&w=560&output=jpg&we"
+                    alt="{{ include.alt | escape }}"
+                />
+            </picture>
+        {%- endif -%}
     </div>
     {%- if include.link or include.linked_file_name -%}
         </a>

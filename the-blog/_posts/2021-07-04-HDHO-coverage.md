@@ -2,7 +2,7 @@
 description: The county's marquee housing ordinance, passed in 2019, appeared to be on its way to working. Then officials changed course.
 
 image:
-    path: "assets/posts/2021-07-04-HDHO-coverage/murphy-flats.jpg"
+    path: "/assets/posts/2021-07-04-HDHO-coverage/murphy-flats.jpg"
     credit: photo by Carter Pape
     license: exclusive use
     caption: Murphy Flats, the three-level property shown here, was planned as condominiumized multiplexes. Now that only locals can purchase the units, the homebuilder says they will instead be rental units.
