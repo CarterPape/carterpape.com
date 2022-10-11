@@ -4,8 +4,8 @@ permalink: "/"
 last_updated: "Jan. 14, 2022"
 description: I am a reporter for _American Banker_ living in Corvallis, Oregon. Previously, I reported for _The Times-Independent_ in Moab, Utah. I studied mathematics at North Carolina State University and grew up in Durham, North Carolina.
 image:
-    path: assets/pages/index/preview/2021-07.jpg
-    alt: a selfie of Carter Pape, taken with a drone in front of a red rock face near Moab, Utah
+    path: assets/pages/index/2022-10.jpeg
+    alt: a selfie of Carter Pape and some cows, taken in the middle of a bike ride
     credit: photo by Carter Pape
     license: CC BY-SA 4.0
 
