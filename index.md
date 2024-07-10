@@ -2,7 +2,7 @@
 layout: "browsing/homepage"
 permalink: "/"
 last_updated: "Jan. 14, 2022"
-description: I am a reporter for _American Banker_ living in Corvallis, Oregon. Previously, I reported for _The Times-Independent_ in Moab, Utah. I studied mathematics at North Carolina State University and grew up in Durham, North Carolina.
+description: I am a reporter for _American Banker_ living in Davis, California. Previously, I reported for _The Times-Independent_ in Moab, Utah. I studied mathematics at North Carolina State University and grew up in Durham, North Carolina.
 image:
     path: assets/pages/index/2022-10.jpeg
     alt: a selfie of Carter Pape and some cows, taken in the middle of a bike ride
@@ -20,7 +20,7 @@ seo:
 ## highlights
 
 * Technology reporter for _[American Banker]_
-    * I (mostly) report on the cybersecurity of banking.
+    * I report on cybersecurity and financial crime prevention in banking.
 * Previously, reporter for _[The Times-Independent]_
     * I reported on county government, the local impact of COVID-19, tourism, business, and other topics.
 * Previously, news editor of _[Technician]_

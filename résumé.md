@@ -12,11 +12,9 @@ seo:
 
 ## profile
 
-I am a reporter for _American Banker_ living in Corvallis, Oregon. I have previously reported from Utah, Colorado, and North Carolina.
+I am a reporter for _American Banker_ living in Davis, California. I have previously reported from Utah, Colorado, and North Carolina.
 
-I have three years of professional experience in the field of journalism, one year of experience in student journalism, five years in software development, and four additional years of side work in programming.
-
-Currently, my long-term career goal is to return to my hometown of Durham, North Carolina to manage a digital news media nonprofit to give back to the community that raised me and push the field forward.
+I have five years of professional experience in the field of journalism, one year of experience in student journalism, five years in software development, and four additional years of side work in programming.
 
 ## work experience
 
