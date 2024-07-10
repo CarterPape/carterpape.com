@@ -15,7 +15,7 @@ proof:
 ---
 
 {% include authoring/image.html
-    image_path = "assets/posts/legacy/IMG_6686.jpg"
+    image_path = "/assets/posts/legacy/IMG_6686.jpg"
     alt = "a computer screen showing moabtimes.com"
     is_decorative = false
     credit = "photo by Carter Pape"

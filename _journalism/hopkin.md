@@ -4,7 +4,7 @@ _url: https://www.moabtimes.com/articles/the-lives-touched-by-margaret-hopkin/
 ---
 
 {% include authoring/image.html
-    image_path = "assets/collections/journalism/preview/Hopkin and Hickman.jpg"
+    image_path = "/assets/collections/journalism/preview/Hopkin and Hickman.jpg"
     alt = "Athan Hickman and Margaret Hopkin pose with a coin collection"
     is_decorative = false
     credit = "Photo courtesy of Grand County School District"

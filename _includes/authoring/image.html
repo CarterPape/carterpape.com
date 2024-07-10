@@ -3,6 +3,11 @@
 {%- assign credit = nil -%}
 {%- assign license = nil -%}
 {%- assign license_link = nil -%}
+{%- assign full_width_if_applicable = "full-width" -%}
+
+{%- if include.class == "half-width" -%}
+    {%- assign full_width_if_applicable = nil -%}
+{%- endif -%}
 
 {%- capture original_image_url -%}
     {%- if include.image_url and include.image_url != nil and include.image_url != "" -%}
@@ -23,25 +28,23 @@
             class="img-link"
         >
     {%- endif -%}
-    <div class="img-wrapper">
-        {%- if jekyll.environment == "development" -%}
-            <picture class="{{jekyll.environment}}">
+    <div class="img-wrapper {{full_width_if_applicable}}">
+        <picture class="{{jekyll.environment}}">
+            {%- if jekyll.environment == "development" -%}
                 <img
                     {% if include.image_url
                         and include.image_url != nil
                         and include.image_url != ""
                     %}
-                        {% imagesize include.image_url:props?width=560 %}
+                        {% imagesize include.image_url:props %}
                         src="{{ include.image_url }}"
                     {% elsif include.image_path %}
-                        {% imagesize include.image_path:props?width=560 %}
+                        {% imagesize include.image_path:props %}
                         src="{{ include.image_path }}"
                     {% endif %}
                     alt="{{ include.alt | escape }}"
                 />
-            </picture>
         {%- else -%}
-            <picture class="{{jekyll.environment}}">
                 <source
                     type="image/webp"
                     srcset="
@@ -62,15 +65,15 @@
                 />
                 <img
                     {% if include.image_url and include.image_url != nil and include.image_url != "" %}
-                        {% imagesize include.image_url:props?width=560 %}
+                        {% imagesize include.image_url:props %}
                     {% elsif include.image_path %}
-                        {% imagesize include.image_path:props?width=560 %}
+                        {% imagesize include.image_path:props %}
                     {% endif %}
                     src="https://images.weserv.nl?url={{ original_image_url }}&w=560&output=jpg&we"
                     alt="{{ include.alt | escape }}"
                 />
-            </picture>
-        {%- endif -%}
+            {%- endif -%}
+        </picture>
     </div>
     {%- if include.link or include.linked_file_name -%}
         </a>
