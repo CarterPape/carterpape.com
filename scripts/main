@@ -15,6 +15,25 @@ site_path="$project_dir_path/_site"
 posts_path="$project_dir_path/_posts"
 post_assets_path="$project_dir_path/assets/posts"
 
+browser_headers=$(cat <<EOM
+{
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Connection": "keep-alive",
+        "Priority": "u=0, i",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15"
+    }
+}
+EOM
+)
+
+source "$scripts_dir_path/activate_env"
+
 dev () {
     remove_generated_files_if_present
     npx webpack --mode=development
@@ -46,6 +65,8 @@ test () {
     
     proof_html
     
+    aws sso login
+    
     rclone sync         \
         --dry-run       \
         --checksum      \
@@ -70,6 +91,8 @@ push () {
     
     proof_html
     
+    aws sso login
+    
     rclone sync         \
         --checksum      \
         --progress      \
@@ -86,28 +109,31 @@ push () {
     git push
 }
 
+init_env () {
+    bundle config set path "$project_dir_path/vendor.noindex"
+    bundle config set bin "$project_dir_path/bin"
+    bundle install
+}
+
 # index () {
-#     set -o allexport
-#     source "$project_dir_path/.env"
-#     set +o allexport
-    
 #     bundle exec jekyll algolia
 # }
 
 give_names () {
-    $dir_path/scripts/give_names.rb
+    $project_dir_path/scripts/give_names.rb
 }
 
 check_names () {
-    $dir_path/scripts/check_names.rb $1
+    $project_dir_path/scripts/check_names.rb $1
 }
 
 proof_html () {
     htmlproofer $site_path \
+        --typhoeus="$browser_headers" \
         --checks Links,Images,Scripts,Favicon,OpenGraph \
-        --ignore_missing_alt=true \
-        --cache '{"timeframe": {"external": "2d"}}' \
-        --swap-urls '^((https?\:)?//)?carterpape\.com:'
+        --cache '{"timeframe": {"external": "2w"}}' \
+        --swap_urls '^((https?\:)?//)?carterpape\.com:' \
+        --no-check_external_hash
 }
 
 subcommand="${1}" 
@@ -120,6 +146,12 @@ case ${subcommand} in
         ;;
     push)
         push
+        ;;
+    init_env)
+        init_env
+        ;;
+    proof_html)
+        proof_html
         ;;
     # index)
     #     index

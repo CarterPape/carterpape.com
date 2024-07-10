@@ -44,6 +44,8 @@ gem "classifier-reborn"
 gem "webrick"
 gem "html-proofer"
 gem "sass-embedded"
+gem "csv"
+gem "base64"
 
 gem "xmpr",
     github: "CarterPape/xmpr",
