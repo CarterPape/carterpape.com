@@ -180,7 +180,7 @@ This subtle difference (alongside likely differences in philosophy about how bes
 {% endcapture %}
 
 {% capture caption %}
-(left side of image: [Oliver Pattison](https://web.archive.org/web/20220628200519/https://olivermak.es/), [CC BY-NC 4.0](https://olivermak.es/license/))
+(left side of image: [Oliver Pattison](https://web.archive.org/web/20220628200519/https://olivermak.es/), [CC BY-NC 4.0](https://web.archive.org/web/20210120163314/https://olivermak.es/license/))
 {% endcapture %}
 
 

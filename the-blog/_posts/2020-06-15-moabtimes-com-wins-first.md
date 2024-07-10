@@ -150,7 +150,7 @@ The 2019 version of `moabtimes.com` is a project of which I am very proud and on
     
     Since web locations can change on a regular basis, Internet Archive does not settle for archiving what it finds at a specific URL once; it revisits the URL in some cases [hundreds of times per day](https://web.archive.org/web/*/nytimes.com), capturing what it looked like at many specific moments and how it changed over time.
 
-[^rural-broadband]: I have [written very minimally](https://www.moabtimes.com/article/where-is-broadband-available-in-moab/) about this topic before based on [a state map of broadband internet availability](https://broadband.ugrc.utah.gov/#/route/minDownSpeed=4&minUpSpeed=7&transTypes=40|41|10|20|30|50|70|71&extent=-12196644|4651808|577791). My experience is that mobile wireless coverage is not nearly as extensive as the map depicts.
+[^rural-broadband]: I have [written very minimally](https://www.moabtimes.com/articles/where-is-broadband-available-in-moab) about this topic before based on [a state map of broadband internet availability](https://broadband.ugrc.utah.gov/#/route/minDownSpeed=4&minUpSpeed=7&transTypes=40|41|10|20|30|50|70|71&extent=-12196644|4651808|577791). My experience is that mobile wireless coverage is not nearly as extensive as the map depicts.
 
 [^Cloudflare-rankings]:
     Here are a list of sources that rank Cloudflare against other content delivery networks and domain name systems:

@@ -81,7 +81,7 @@ At a larger scale, though, farming has considerable environmental impacts. Indiv
 [genetic engineering cost]: https://gmoanswers.com/ask/how-much-time-does-it-take-and-how-much-does-it-cost-successfully-develop-hybrid-one-or-more
 [genetic engineering wiki]: https://en.wikipedia.org/wiki/Genetic_engineering
 [golden rice opposition]: https://nyti.ms/2jSlqRf
-[golden rice research]: https://academic.oup.com/ajcn/article/96/3/658/4576908
+[golden rice research]: https://doi.org/10.3945/ajcn.2008.27119
 [Greenpeace protest]: https://www.abc.net.au/news/2011-07-14/20110714-greenpeace-gm-protest/2794272
 [nutrition paper]: https://dx.doi.org/10.3945/ajcn.2010.29269
 [organic sustainability paper]: https://www.sciencedirect.com/science/article/pii/S0308521X00000603
