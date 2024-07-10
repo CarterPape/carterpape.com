@@ -106,7 +106,14 @@ push () {
     # TODO: turn _site/redirects into a Cloudflare bulk redirect list
     
     git pull
+    
+    echo 'If git-lfs asks for a credential, go make a new token at "https://github.com/settings/tokens" and enter it.'
+    
     git push
+    
+    # When it comes time to push objects to git-lfs, git will ask for a username and password. If using VSCode, this will come up as a little pop-up, probably near the top of the window. 
+    # This username and password is not set by the Lambda function in AWS. The username and password need to be the label and token for a GitHub personal access token (https://github.com/settings/tokens). Fine-grained tokens work.
+    # The personal access token only has to belong to the correct user (carterpape); it doesn't need any special permissions. By design, these access tokens expire over time, so if uploading to git-lfs hangs, it probably means it's time to go make a new token.
 }
 
 init_env () {
