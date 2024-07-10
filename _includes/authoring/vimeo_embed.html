@@ -1,0 +1,20 @@
+<div
+    class="vimeo_embed_wrapper"
+    style="
+        padding: {{ include.padding_ratio }} 0 0 0;
+    "
+>
+    <iframe
+        src="https://player.vimeo.com/video/
+            {{- include.vimeo_id -}}
+        "
+        frameborder="0"
+        allow="
+            autoplay;
+            fullscreen;
+            picture-in-picture
+        "
+        allowfullscreen
+    >
+    </iframe>
+</div>
