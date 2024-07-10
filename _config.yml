@@ -41,6 +41,7 @@ collections:
     awards:
         output: false
         order:
+            - best-how-to.md
             - best-gov-pol-story.md
             - best-general-news.md
             - best-education-story.md
