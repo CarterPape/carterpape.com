@@ -13,13 +13,12 @@ This website uses intellectual properties [referenced in the website's source co
 
 Some properties used are accompanied by attribution and licensing notes. If you believe proper attribution is missing for any properties, [contact me]({% link contact.md %}).
 
-Icons for Facebook, Twitter, Instagram, and GitHub are trademarks of the respective owners. Their use does not indicate endorsement of me by the trademark owner, nor vice versa.
+Icons for Facebook, Instagram, and GitHub are trademarks of the respective owners. Their use does not indicate endorsement of me by the trademark owner, nor vice versa.
 
 The following icons are by Font Awesome, [licensed CC BY 4.0](https://fontawesome.com/license):
 
 - [award icon](https://fontawesome.com/v5.15/icons/award?style=solid) (I modified the original by adding a stroke and sheen)
 - [Facebook icon](https://fontawesome.com/v5.15/icons/facebook?style=brands)
-- [Twitter icon](https://fontawesome.com/v5.15/icons/twitter?style=brands)
 - [GitHub icon](https://fontawesome.com/v5.15/icons/github?style=brands)
 - [Instagram icon](https://fontawesome.com/v5.15/icons/instagram?style=brands)
 

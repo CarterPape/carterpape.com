@@ -34,5 +34,4 @@ If you want an extra secure means of reaching me, you can use any of the followi
 If you do not trust any of those apps, here's [an OpenPGP public key]({%- link /assets/pages/contact/Carter Pape (E9179A9F) – Public.asc -%}) in RSA format and a promise from me that I am the only person who has the corresponding private key.
 
 
-[my Twitter]: https://twitter.com/{{ site_author.twitter }}/
 [my Wikipedia talk page]: https://en.wikipedia.org/wiki/User_talk:{{ site.data.authors[site.author].wikipedia }}

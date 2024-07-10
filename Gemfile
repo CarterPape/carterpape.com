@@ -16,7 +16,6 @@ group :jekyll_plugins do
     gem "jekyll-redirect-from"
     gem "jekyll-seo-tag"
     gem "jekyll-optional-front-matter"
-    gem "jekyll-twitter-plugin"
     gem "jekyll-image-size"
     
     gem "jekyll-sass-converter",

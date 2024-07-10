@@ -76,7 +76,6 @@ If you are interested to see [the original Adobe Illustrator file][design in ai]
 [design in pdf]: https://s3.amazonaws.com/carterpape-assets/how+the+app+will+look.pdf "direct download of a .pdf version of the write app rendering"
 [Oliver Reichenstein on China]: https://ia.net/topics/designed-in-china-assembled-in-california
 [Paper]: https://www.papereditor.app/ "link to the app's website"
-[Paper on Twitter]: https://twitter.com/papereditorapp
 [Paper screenshot]: https://s3.amazonaws.com/carterpape-assets/paper-screenshot.png "a screenshot of Paper, the app I am currently using and upon whose functionalities I seek to improve"
 [write render]: https://s3.amazonaws.com/carterpape-assets/write-render.png "a render of write, the app, created with Adobe Illustrator"
 
