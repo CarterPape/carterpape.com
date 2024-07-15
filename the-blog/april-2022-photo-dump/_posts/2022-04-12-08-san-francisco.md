@@ -1,6 +1,6 @@
 ---
 image:
-    path: assets/posts/2022-04-12-photo-dump/2022-04-12-08-san-francisco/015-Golden-Gate.jpeg
+    path: /assets/posts/2022-04-12-photo-dump/2022-04-12-08-san-francisco/015-Golden-Gate.jpeg
     hide_at_top_of_page: true
     use_xmp: true
 ---
