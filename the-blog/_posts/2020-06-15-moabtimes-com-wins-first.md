@@ -160,7 +160,7 @@ The 2019 version of `moabtimes.com` is a project of which I am very proud and on
     - European-based content delivery network [KeyCDN](https://www.keycdn.com/) ranks Cloudflare [#2 among domain name systems](https://www.keycdn.com/blog/best-free-dns-hosting-providers).
     - Domain name server testing site [SolveDNS](https://web.archive.org/web/20210525043002/https://www.solvedns.com/) consistently ranks Cloudflare [top 10 among domain name systems](https://web.archive.org/web/20210212040524/https://www.solvedns.com/dns-comparison/). (These links were originally to the live SolveDNS site, but inconsistency with the site led me to link to an archived version of it.)
     - Media site [Mashable](https://mashable.com/) ranks Cloudflare [#3 among content delivery networks](https://mashable.com/roundup/best-content-delivery-networks/).
-    - Technology review site [G2](https://www.g2.com/){:data-proofer-ignore="true" title="This link might be broken."} ranks Cloudlfare [#1 among content delivery networks](https://www.g2.com/categories/content-delivery-network-cdn){:data-proofer-ignore="true" title="This link might be broken."}
+    - Technology review site [G2](https://www.g2.com/) ranks Cloudlfare [#1 among content delivery networks](https://www.g2.com/categories/content-delivery-network-cdn)
     
     So, it gets a few good comments.
 
@@ -173,6 +173,6 @@ The 2019 version of `moabtimes.com` is a project of which I am very proud and on
     - Technology review site [Toolbox](https://web.archive.org/web/20210101090707/https://www.toolbox.com/) (later [merged with Spiceworks](https://community.spiceworks.com/topic/2271248-welcoming-toolbox-what-do-you-like-about-spiceworks)) ranked [WordPress top CMS](https://www.spiceworks.com/marketing/content-marketing/articles/10-best-content-management-systems-cms-software-in-2020/feed/).
     - Web hosting provider [Hostinger](https://www.hostinger.com/) ranks [WordPress top CMS](https://www.hostinger.com/tutorials/best-cms).
     - Web hosting provider [Ionos](https://www.ionos.com) details [why WordPress is the most popular content management system](https://www.ionos.com/digitalguide/hosting/cms/cms-comparison-a-review-of-the-best-platforms/).
-    - Technology review site [TrustRadius](https://www.trustradius.com){:data-proofer-ignore="true" title="This link might be broken."} has WordPress as [one of its top ranked content management systems](https://www.trustradius.com/cms){:data-proofer-ignore="true" title="This link might be broken."}.
+    - Technology review site [TrustRadius](https://www.trustradius.com) has WordPress as [one of its top ranked content management systems](https://www.trustradius.com/cms).
     
     Again, a few good comments.
