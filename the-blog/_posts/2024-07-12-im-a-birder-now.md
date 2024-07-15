@@ -18,7 +18,7 @@ In May, I decided to dump an inordinate amount of money into purchasing a camera
     use_xmp = true
 %}
 
-Since then, I have taken thousands of photos of birds. One of my favorite birds is the [California scrub-jay], which often comes to [visit my birdfeeder](https://app.mybirdbuddy.com/media/davis-united-states/california-scrub-jay/6239f693-ecfd-4576-95b8-e08042cb830c) at my apartment.
+Since then, I have taken thousands of photos of birds. One of my favorites is the [California scrub-jay], which often comes to [visit my birdfeeder](https://app.mybirdbuddy.com/media/davis-united-states/california-scrub-jay/6239f693-ecfd-4576-95b8-e08042cb830c) at my apartment.
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/DSC02204-Enhanced-NR.jpg"
@@ -28,7 +28,7 @@ Since then, I have taken thousands of photos of birds. One of my favorite birds 
     use_xmp = true
 %}
 
-The prelude to this was developing a birding obsession. During a reunion with my dad's side of the family, we played a lot of [Wingspan], which is a game about collecting birds.
+The prelude to this decision was developing a birding obsession. During a reunion with my dad's side of the family, we played a lot of [Wingspan], which is a game about collecting birds.
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/20230801_183352_8B9118.jpeg"
@@ -39,9 +39,9 @@ The prelude to this was developing a birding obsession. During a reunion with my
 
 After that vacation, I started playing [the mobile version](https://apps.apple.com/us/app/wingspan-the-board-game/id1459520638) of the game on my phone.
 
-In the mobile version, the game will play the bird calls of the birds you have on your board, and one day, I heard an extremely familiar bird call.
+In the mobile version, the app will play the calls of the birds you have on your board, and one day, I heard an extremely familiar bird call.
 
-It turned out to be a bird that I heard constantly for 22 years of my life while living in North Carolina. It wasn't until this year, after never really listening closely to it, that I recognized it as a sound of home.
+It turned out to be a call I heard constantly for 22 years of my life while living in North Carolina. It wasn't until this year, after never really listening closely to it, that I recognized it as a sound of home.
 
 <iframe src="https://macaulaylibrary.org/asset/191224/embed" height="419" width="510" frameborder="0" allowfullscreen style="margin: 1.5em 0"></iframe>
 
@@ -63,7 +63,7 @@ That moment made me realize that birds really interested me, and as I expressed 
 
 For the next several weeks, I would go to various locations around Davis to see whatever birds I could find and add them to [my life list](https://ebird.org/profile/NDc3MDE5Mw) --- the list of bird species I have seen in my life.
 
-I have been tracking my bird spottings through eBird, a project of Cornell University Lab of Ornithology that allows the public to document their bird sightings, both descriptively and with media (images, videos, and audio).
+I have been tracking my bird spottings through [eBird](https://ebird.org/home), a project of Cornell University Lab of Ornithology that allows the public to document their bird sightings, both descriptively and with media (images, videos, and audio).
 
 The project is a really powerful birding tool that allows you to see the areas where particular species tend to be observed, the areas that tend to have the greatest diversity of birds, photos of the birds that you are trying to identify, and a whole bunch of other resources.
 
