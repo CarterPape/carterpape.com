@@ -18,13 +18,17 @@ I have five years of professional experience in the field of journalism, one yea
 
 ## work experience
 
-[My LinkedIn profile](https://www.linkedin.com/in/{{ site.data.authors[site.author].linkedin }}/){:data-proofer-ignore="true" title="This link might be broken."} provides a comprehensive list of my work experiences. Below is a selection of those jobs:
+[My LinkedIn profile](https://www.linkedin.com/in/{{ site.data.authors[site.author].linkedin }}/) provides a comprehensive list of my work experiences. Below is a selection of those jobs:
 
-### Technology Reporter at _[American Banker](https://www.americanbanker.com)_
+### Reporter at _[American Banker](https://www.americanbanker.com)_
 
 #### January 2022 - now
 
-* I (mostly) report on the cybersecurity of banking.
+* I write timely news and analysis about data breaches, fraud, money laundering, and terrorism financing. For example, I cover:
+    - How and why regulators and lawmakers are [changing](https://americanbanker.com/news/congress-passes-72-hour-cyberattack-reporting-requirement) the ways in which banks must disclose cybersecurity breaches
+    - Why banks originally [backed](https://www.americanbanker.com/news/bipartisan-bill-would-require-firms-to-report-hacks-within-72-hours) the new requirements
+    - Why they have [changed their minds](https://www.americanbanker.com/news/banking-groups-balk-at-proposed-cyber-incident-reporting-rule)
+* My coverage also extends into the broader world of technology, to award-winning effect. For example, I have reported on the use of WhatsApp inside investment banks, and why regulators cracked down on its use.
 
 ### Reporter at _[The Times-Independent](https://moabtimes.com/)_
 
@@ -101,7 +105,7 @@ I have five years of professional experience in the field of journalism, one yea
 
 * In my first internship, I created a server that propagated timesheet data to three billing websites.
 * I helped to create a website for intra-company, collaborative learning at [I-Cubed][I-Cubed acquired].
-* See [my LinkedIn profile]{:data-proofer-ignore="true" title="This link might be broken."} for more information.
+* See [my LinkedIn profile] for more information.
 
 [my LinkedIn profile]: https://www.linkedin.com/in/{{ site.data.authors[site.author].linkedin }}/
 [I-Cubed acquired]: https://www.bizjournals.com/triangle/blog/techflash/2014/06/raleigh-based-i-cubed-is-acquired-by.html
@@ -123,7 +127,7 @@ I have five years of professional experience in the field of journalism, one yea
 
 #### February 26, 2018
 
-* Discussed issues of diversity and inclusion alongside [13 other student panelists] in Witherspoon Student Center, facilitated by [Bill Leftwich]{:data-proofer-ignore="true" title="This link might be broken."}.
+* Discussed issues of diversity and inclusion alongside [13 other student panelists] in Witherspoon Student Center, facilitated by [Bill Leftwich].
 * Invited by Assistant Vice Provost for Student Diversity Tracey Ray.
 
 [13 other student panelists]: https://oied.smugmug.com/Diversity/Diversity-Dialogue-Spring-2018/i-fSF5zVc/A

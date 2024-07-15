@@ -1,7 +1,7 @@
 ---
 layout: "browsing/homepage"
 permalink: "/"
-last_updated: "Jan. 14, 2022"
+last_updated: "July 9, 2024"
 description: I am a reporter for _American Banker_ living in Davis, California. Previously, I reported for _The Times-Independent_ in Moab, Utah. I studied mathematics at North Carolina State University and grew up in Durham, North Carolina.
 image:
     path: assets/pages/index/2022-10.jpeg
@@ -19,10 +19,8 @@ seo:
 
 ## highlights
 
-* Technology reporter for _[American Banker]_
-    * I report on cybersecurity and financial crime prevention in banking.
-* Previously, reporter for _[The Times-Independent]_
-    * I reported on county government, the local impact of COVID-19, tourism, business, and other topics.
+* Reporter for _[American Banker]_
+    * I cover cybersecurity and financial crime prevention in banking and financial services.
 * Previously, news editor of _[Technician]_
     * I created and produced the student newspaper's first podcast, _[Dialogue with Technician]_.
 * Twelve years of [programming experience]({% link the-blog/_posts/2020-02-05-ten-years-of-programming.md %}), nine of which have been [in the workplace]({% link résumé.md %}#various-programming-jobs)
