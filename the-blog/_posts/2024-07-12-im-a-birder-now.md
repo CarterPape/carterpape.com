@@ -4,7 +4,7 @@ image:
     hide_at_top_of_page: true
     use_xmp: true
 
-hide_word_count: true
+description: It started with a board game, and then I recognized the sound of a bird from my childhood, and now I own an expensive camera.
 ---
 
 # I'm a birder, now.
