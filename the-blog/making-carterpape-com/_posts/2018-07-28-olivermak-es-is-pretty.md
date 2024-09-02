@@ -169,7 +169,7 @@ Browsing Pattison's site made me appreciate both his use of richly saturated col
 
 I strive for maximum writing quality on my site, and I focus on how to make the reading experience as streamlined as possible. Sometimes that involves cutting graphics, features, words, or colors. Focusing the user on reading and making my content readable are high priorities for me.
 
-While readability is a priority in good design, Pattison's site serves a slightly different purpose than maximizing readability as a first priority. His site is an [archive][Pattison on archiving] that is meant to [impress prospective employers][Pattison on getting hired] who are seeking a **designer**. I am trying to [impress prospective employers][my résumé] who are seeking a **reporter**.
+While readability is a priority in good design, Pattison's site serves a slightly different purpose than maximizing readability as a first priority. His site is an archive that is meant to [impress prospective employers][Pattison on getting hired] who are seeking a **designer**. I am trying to [impress prospective employers][my résumé] who are seeking a **reporter**.
 
 This subtle difference (alongside likely differences in philosophy about how best to make a website and impress employers) means conspicuous differences in our design choices, and that's okay. We're just different.
 

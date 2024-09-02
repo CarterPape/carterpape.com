@@ -106,4 +106,4 @@ _This post was last updated August 16, 2018 with minor grammatical and layout ch
 [enable secret conversations]: https://www.facebook.com/help/messenger-app/811527538946901?helpref=uf_permalink
 [full help page on secret conversations]: https://www.facebook.com/help/messenger-app/1084673321594605/?helpref=hc_fnav
 [Messenger white paper]: https://web.archive.org/web/20200803073615/https://fbnewsroomus.files.wordpress.com/2016/07/messenger-secret-conversations-technical-whitepaper.pdf
-[secret conversations press release]: https://newsroom.fb.com/news/2016/07/messenger-starts-testing-end-to-end-encryption-with-secret-conversations/
+[secret conversations press release]: https://about.fb.com/news/2016/07/messenger-starts-testing-end-to-end-encryption-with-secret-conversations/
