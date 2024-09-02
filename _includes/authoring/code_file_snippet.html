@@ -1,0 +1,23 @@
+{%- comment -%}
+    Usage:
+        {% capture code_snippet %}
+        ```yml
+        the_code:
+            goes:
+                - here
+        ```
+        {% endcapture %}
+        
+        {% include authoring/code_file_snippet.html
+            file_name = "the_file.yml"
+            code_snippet = code_snippet
+        %}
+{%- endcomment -%}
+
+<figure class="code_file_snippet">
+    <figcaption>
+        <pre>{{- include.file_name -}}</pre>
+    </figcaption>
+    <hr />
+    {{- code_snippet | markdownify -}}
+</figure>

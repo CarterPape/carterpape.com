@@ -1,0 +1,26 @@
+div.highlighter-rouge {
+    margin-bottom: 1em;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+figure.code_file_snippet {
+    border-radius: 5px;
+    border: 1px solid $divider-gray;
+    overflow-x:     auto;
+    
+    figcaption {
+        margin-top: 0;
+        font-weight: bold;
+        color: lighten($stand-out-text, 20%);
+    }
+    hr {
+        margin: 0 1em;
+    }
+    pre {
+        border: none;
+        background: none;
+    }
+}
