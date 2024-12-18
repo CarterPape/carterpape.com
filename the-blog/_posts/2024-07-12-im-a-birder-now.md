@@ -135,6 +135,7 @@ The same day I got the lens, I took some of the best photos I have taken with it
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/DSC00315-Enhanced-NR.jpg"
+    link = "/assets/posts/2024-07-12-im-a-birder-now/DSC00315-Enhanced-NR.jpg"
     caption = "a [killdeer](https://www.allaboutbirds.org/guide/Killdeer)"
     alt = "standing on sticks and mulch, a shorebird with a short beak, buffy brown back, white chest, a black ring around its neck, and red around its eye"
     use_xmp = true
@@ -142,6 +143,7 @@ The same day I got the lens, I took some of the best photos I have taken with it
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/DSC00486-Enhanced-NR.jpg"
+    link = "/assets/posts/2024-07-12-im-a-birder-now/DSC00486-Enhanced-NR.jpg"
     caption = "a [pied-billed grebe](https://www.allaboutbirds.org/guide/Pied-billed_Grebe)"
     alt = "wading in greenish blue water, a waterfowl with a white beak with a black stripe, gray-to-white body with visibly wet feathers and a leg visible under the water"
     use_xmp = true
@@ -149,6 +151,7 @@ The same day I got the lens, I took some of the best photos I have taken with it
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/DSC01047-Enhanced-NR.jpg"
+    link = "/assets/posts/2024-07-12-im-a-birder-now/DSC01047-Enhanced-NR.jpg"
     caption = "a [turkey vulture](https://www.allaboutbirds.org/guide/Turkey_Vulture)"
     alt = "in front of a partly cloudy blue sky, a soaring raptor with an enormous wingspan compared to its red head and yellow beak. Its black leading feathers and shadowy white tailing feathers stretch to long, finger-looking wingtips"
     use_xmp = true
@@ -156,6 +159,7 @@ The same day I got the lens, I took some of the best photos I have taken with it
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/DSC01322-Enhanced-NR.jpg"
+    link = "/assets/posts/2024-07-12-im-a-birder-now/DSC01322-Enhanced-NR.jpg"
     caption = "a juvenile [Canada goose](https://www.allaboutbirds.org/guide/Canada_Goose)"
     alt = "In a small puddle among short, leafy weeds, a baby goose covered in bright yellow-to-brown feathers, with a short black beak, drips a circular droplet of water as it drinks."
     use_xmp = true
@@ -171,6 +175,7 @@ The aperture always goes as large as possible (f/6.3) automatically, though I ki
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/DSC09079-Enhanced-NR.jpg"
+    link = "/assets/posts/2024-07-12-im-a-birder-now/DSC09079-Enhanced-NR.jpg"
     caption = "a male [Anna's hummingbird](https://www.allaboutbirds.org/guide/Annas_Hummingbird)"
     alt = "in front of a totally neutral gray background, standing atop a vertical twig, an olive green hummingbird with an iridescent magenta head. The head feathers fade to a brownish black where they do not directly face the camera."
     use_xmp = true
@@ -205,6 +210,7 @@ My eternal thanks to `fpl1966` for helping me fix my lens. The lens hood is perf
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/DSC09231-Enhanced-NR.jpg"
+    link = "/assets/posts/2024-07-12-im-a-birder-now/DSC09231-Enhanced-NR.jpg"
     caption = "a [wrentit](https://www.allaboutbirds.org/guide/Wrentit)"
     alt = "a grayish brown bird with a modest beak and yellow eye stands atop a group of sticks in an awkward stance"
     use_xmp = true
@@ -212,6 +218,7 @@ My eternal thanks to `fpl1966` for helping me fix my lens. The lens hood is perf
 
 {% include authoring/image.html
     image_path = "/assets/posts/2024-07-12-im-a-birder-now/DSC09548-Enhanced-NR.jpg"
+    link = "/assets/posts/2024-07-12-im-a-birder-now/DSC09548-Enhanced-NR.jpg"
     caption = "a [double-crested cormorant](https://www.allaboutbirds.org/guide/Double-crested_Cormorant)"
     alt = "a grayish black bird with an s-shaped, grayish white throat, black webbed feet, a dark teal eye, and a bright yellowish orange beak"
     use_xmp = true
