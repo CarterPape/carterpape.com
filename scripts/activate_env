@@ -37,7 +37,7 @@ deactivate nondestructive
 export VIRTUAL_ENV="$project_dir_path"
 
 _OLD_VIRTUAL_PATH="$PATH"
-PATH="$VIRTUAL_ENV/bin:$PATH"
+PATH="$VIRTUAL_ENV/bin:$(brew --prefix ruby)/bin:$PATH"
 export PATH
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then

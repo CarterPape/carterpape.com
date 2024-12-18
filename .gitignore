@@ -247,7 +247,3 @@ _css
 _sass.v2
 
 s3_website.yml
-
-assets/generated/
-
-package-lock.json

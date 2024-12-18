@@ -35,27 +35,11 @@ EOM
 source "$scripts_dir_path/activate_env"
 
 dev () {
-    remove_generated_files_if_present
-    npx webpack --mode=development
-    
-    trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
-    
-    npx webpack             \
-        --mode=development  \
-        --watch             \
-        &
-    
     bundle exec jekyll serve \
         --incremental \
         --host $DEV_HOST_NAME \
         --port $DEV_PORT \
         --livereload-port $DEV_LIVERELOAD_PORT
-}
-
-remove_generated_files_if_present () {
-    if [ -d "$project_dir_path/assets/generated" ]; then
-        rm -r "$project_dir_path/assets/generated"
-    fi
 }
 
 test () {
@@ -78,9 +62,6 @@ test () {
 }
 
 production_build () {
-    remove_generated_files_if_present
-    
-    npx webpack --mode=production --progress
     JEKYLL_ENV="production" bundle exec jekyll build
 }
 
@@ -122,9 +103,14 @@ init_env () {
     bundle install
 }
 
-# index () {
-#     bundle exec jekyll algolia
-# }
+reset_ruby () {
+    rm -rf $project_dir_path/vendor.noindex
+    rm -rf $project_dir_path/Gemfile.lock
+    rm -rf $project_dir_path/bin
+    gem update --system
+    gem install bundler
+    init_env
+}
 
 give_names () {
     $project_dir_path/scripts/give_names.rb
@@ -157,14 +143,14 @@ case ${subcommand} in
     init_env)
         init_env
         ;;
+    reset_ruby)
+        reset_ruby
+        ;;
     proof_html)
         proof_html
         ;;
-    # index)
-    #     index
-    #     ;;
     *)
-        echo "`basename ${0}`: usage: dev | test | push | index"
+        echo "`basename ${0}`: usage: dev | test | push | init_env | reset_ruby | proof_html"
         exit 1
         ;;
 esac
