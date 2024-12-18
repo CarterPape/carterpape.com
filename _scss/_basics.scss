@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables" as *;
+
 html {
     -webkit-text-size-adjust:   none;
     background-color:           $site-bg;
@@ -65,8 +68,8 @@ h2 {
     font-size:      2.0em;
     font-style:     normal;
     font-weight:    700;
-    color:          lighten($stand-out-text, 10%);
-    fill:           lighten($stand-out-text, 10%);
+    color:          color.adjust($stand-out-text, $lightness: 10%);
+    fill:           color.adjust($stand-out-text, $lightness: 10%);
     margin-top:     2.2em;
 }
 
@@ -74,8 +77,8 @@ h3 {
     font-size:      1.6em;
     font-style:     italic;
     font-weight:    700;
-    color:          lighten($stand-out-text, 15%);
-    fill:           lighten($stand-out-text, 15%);
+    color:          color.adjust($stand-out-text, $lightness: 15%);
+    fill:           color.adjust($stand-out-text, $lightness: 15%);
     margin-top:     1.9em;
 }
 
@@ -83,8 +86,8 @@ h4 {
     font-size:      1.3em;
     font-style:     normal;
     font-weight:    600;
-    color:          lighten($stand-out-text, 25%);
-    fill:           lighten($stand-out-text, 25%);
+    color:          color.adjust($stand-out-text, $lightness: 25%);
+    fill:           color.adjust($stand-out-text, $lightness: 25%);
     margin-top:     1.6em;
 }
 
@@ -92,8 +95,8 @@ h5 {
     font-size:      1.15em;
     font-style:     italic;
     font-weight:    400;
-    color:          lighten($stand-out-text, 30%);
-    fill:           lighten($stand-out-text, 30%);
+    color:          color.adjust($stand-out-text, $lightness: 30%);
+    fill:           color.adjust($stand-out-text, $lightness: 30%);
     margin-top:     1.4em;
 }
 
@@ -101,8 +104,8 @@ h6 {
     font-size:      1em;
     font-style:     normal;
     font-weight:    300;
-    color:          lighten($stand-out-text, 35%);
-    fill:           lighten($stand-out-text, 35%);
+    color:          color.adjust($stand-out-text, $lightness: 35%);
+    fill:           color.adjust($stand-out-text, $lightness: 35%);
     margin-top:     1.2em;
 }
 

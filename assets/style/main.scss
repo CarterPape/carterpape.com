@@ -3,35 +3,34 @@
 @use "parts/font-faces";
 @use 'parts/headline-balancing';
 
-@import 'variables';
-@import 'basics';
+@use 'basics';
 
-@import 'layout/fundamental';
-@import 'layout/browsing';
-@import 'layout/reading';
+@use 'layout/fundamental';
+@use 'layout/browsing';
+@use 'layout/reading';
 
-@import 'parts/masthead';
-@import 'parts/masthead/navigation';
+@use 'parts/masthead';
+@use 'parts/masthead/navigation';
 
-@import 'parts/icon';
-@import 'parts/image';
-@import 'parts/header';
-@import 'parts/filing';
-@import 'parts/link';
-@import 'parts/card';
-@import 'parts/card-list';
-@import 'parts/youtube_embed';
-@import 'parts/vimeo_embed';
-@import 'parts/kuula_embed';
-@import 'parts/button';
+@use 'parts/icon';
+@use 'parts/image';
+@use 'parts/header';
+@use 'parts/filing';
+@use 'parts/link';
+@use 'parts/card';
+@use 'parts/card-list';
+@use 'parts/youtube_embed';
+@use 'parts/vimeo_embed';
+@use 'parts/kuula_embed';
+@use 'parts/button';
 
-@import 'parts/post';
-@import 'parts/post/header';
-@import 'parts/post/figure';
-@import 'parts/post/aside';
-@import 'parts/post/footnotes';
-@import 'parts/post/footer';
-@import 'parts/post/pre';
+@use 'parts/post';
+@use 'parts/post/header' as post_header;
+@use 'parts/post/figure';
+@use 'parts/post/aside';
+@use 'parts/post/footnotes';
+@use 'parts/post/footer';
+@use 'parts/post/pre';
 
-@import 'page/awards';
-@import 'page/news-clips';
+@use 'page/awards';
+@use 'page/news-clips';

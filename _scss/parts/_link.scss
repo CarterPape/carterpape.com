@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 a.not-blue:not([data-proofer-ignore]) {
     transition-property:    background-color;
     display:                inline-block;

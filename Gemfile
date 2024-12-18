@@ -18,9 +18,6 @@ group :jekyll_plugins do
     gem "jekyll-optional-front-matter"
     gem "jekyll-image-size"
     
-    gem "jekyll-sass-converter",
-        github: "jekyll/jekyll-sass-converter",
-        branch: "master"
     gem "jekyll-reduce-title-redundancy",
         github: "CarterPape/jekyll-reduce-title-redundancy",
         branch: "main"
