@@ -32,7 +32,7 @@ browser_headers=$(cat <<EOM
 EOM
 )
 
-source "$scripts_dir_path/activate_env"
+PATH="$(brew --prefix ruby)/bin:$PATH"
 
 dev () {
     bundle exec jekyll serve \
@@ -121,7 +121,7 @@ check_names () {
 }
 
 proof_html () {
-    htmlproofer $site_path \
+    bundle exec htmlproofer $site_path \
         --typhoeus="$browser_headers" \
         --checks Links,Images,Scripts,Favicon,OpenGraph \
         --cache '{"timeframe": {"external": "2w"}}' \
@@ -129,7 +129,10 @@ proof_html () {
         --no-check_external_hash
 }
 
-subcommand="${1}" 
+# TODO: Consider upgrading html-proofer or switching to a link checker that can better handle anti-scraping measures (like status 999/4xx)
+#       and allows for link checking parallelism control.
+
+subcommand="${1}"
 case ${subcommand} in 
     dev)
         dev
