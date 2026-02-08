@@ -59,7 +59,7 @@ You can read [the full article][IoT Started with a Vending Machine], nicely form
 
 
 
-[DO Supply]: https://www.dosupply.com/index.php
+[DO Supply]: https://www.dosupply.com
 [IoT Started with a Vending Machine]: https://www.machinedesign.com/industrial-automation/iot-started-vending-machine
 [Machine Design]: https://www.machinedesign.com/
 [Upwork]: https://www.upwork.com/

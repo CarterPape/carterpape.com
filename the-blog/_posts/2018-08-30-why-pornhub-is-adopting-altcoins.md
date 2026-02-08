@@ -44,7 +44,7 @@ Pornhub and their crypto partners do not appear to be commenting, and the detail
 
 While Verge markets itself as a secure transaction platform, the cryptocurrency has been [embroiled in controversy](https://cryptoslate.com/on-the-verge-of-controversy/), including [two 51% attacks](https://cryptoslate.com/verge-victim-to-yet-another-51-attack-xvg-down-15-in-past-24-hours/) in less than two months. Each of the attacks exploited strikingly similar vulnerabilities, and the second took place after the Pornhub partnership was publicly announced, possibly compromising some Pornhub users' transactions.
 
-Verge is not the only Pornhub-accepted currency to be hacked; before Horizen [rebranded](https://blog.zencash.com/hello-horizen/) from ZenCash, and after the [announcement of their Pornhub partnership](https://cryptoslate.com/tron-and-zencash-added-to-pornhub-payment-methods/), the coin was victim to [a 51% hack](https://cryptoslate.com/hackers-scoop-20-million-in-eth-from-exposed-ethereum-nodes/) that resulted in a few instances of double-spending, another incident that may have affected Pornhub directly.
+Verge is not the only Pornhub-accepted currency to be hacked; before Horizen [rebranded](https://web.archive.org/web/20220922041718/https://blog.horizen.io/hello-horizen/) from ZenCash, and after the [announcement of their Pornhub partnership](https://cryptoslate.com/tron-and-zencash-added-to-pornhub-payment-methods/), the coin was victim to [a 51% hack](https://cryptoslate.com/hackers-scoop-20-million-in-eth-from-exposed-ethereum-nodes/) that resulted in a few instances of double-spending, another incident that may have affected Pornhub directly.
 
 ----
 
