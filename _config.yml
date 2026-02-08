@@ -2,21 +2,20 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files, you will see them accessed via {{ site.title }}, {{ site.tagline }}, and so on. You can create any custom variable you would like, and they will be accessible in the templates via {{ site.myvariable }}.
 
-url:            https://carterpape.com
-title:          Carter Pape's website
-tagline:        |
+url: https://carterpape.com
+title: Carter Pape's website
+tagline: |
     Carter Pape is a reporter  
     for *American Banker*
-author:         Carter Pape
-lang:           en-us
+author: Carter Pape
+lang: en-us
 
 cloudflare_token: e0a891b5512949ac844da72b444e0b9b
 
@@ -87,46 +86,41 @@ collections:
 
 # Formatting settings
 
-permalink:      pretty
-timezone:       America/Denver
-date_format:    "%b. %-d, %Y"
+permalink: pretty
+timezone: America/Denver
+date_format: "%b. %-d, %Y"
 
 defaults:
-    -
-        scope:
-            path: ""
-            type: "pages"
-        values:
-            layout: "browsing/card-list"
-    -
-        scope:
-            path: ""
-            type: "posts"
-        values:
-            author: Carter Pape
-            layout: "reading/post"
-            unlisted: false
-            seo:
-                type: BlogPosting
-    -
-        scope:
-            path: "the-blog/unlisted"
-            type: "posts"
-        values:
-            unlisted: true
-            sitemap:
-                exclude: true
-    -
-        scope:
-            path: "the-blog/april-2022-photo-dump"
-            type: "posts"
-        values:
-            hide_from_blog_index: true
-    -
-        scope:
-            path: "the-blog/april-2022-photo-dump"
-        values:
-            hide_word_count: true
+    - scope:
+          path: ""
+          type: "pages"
+      values:
+          layout: "browsing/card-list"
+    - scope:
+          path: ""
+          type: "posts"
+      values:
+          author: Carter Pape
+          layout: "reading/post"
+          unlisted: false
+          seo:
+              type: BlogPosting
+    - scope:
+          path: "the-blog/unlisted"
+          type: "posts"
+      values:
+          unlisted: true
+          sitemap:
+              exclude: true
+    - scope:
+          path: "the-blog/april-2022-photo-dump"
+          type: "posts"
+      values:
+          hide_from_blog_index: true
+    - scope:
+          path: "the-blog/april-2022-photo-dump"
+      values:
+          hide_word_count: true
 
 kramdown:
     footnote_backlink: "\u2934\uFE0E"
@@ -134,22 +128,22 @@ kramdown:
     auto_id_stripping: true
 
 category_display_names:
-    the-blog:               "the blog"
-    making-carterpape-com:  "making carterpape.com"
-    decompiling-facebook:   "decompiling Facebook"
-    making-write:           "making write"
-    april-2022-photo-dump:  "April 2022 photo dump"
+    the-blog: "the blog"
+    making-carterpape-com: "making carterpape.com"
+    decompiling-facebook: "decompiling Facebook"
+    making-write: "making write"
+    april-2022-photo-dump: "April 2022 photo dump"
 
 # Build settings
 
-lsi:        true
+lsi: true
 livereload: true
-open_url:   true
+open_url: true
 
 liquid:
-    error_mode:         strict
-    strict_variables:   false
-    strict_filters:     true
+    error_mode: strict
+    strict_variables: false
+    strict_filters: true
 
 strict_front_matter: true
 
@@ -182,6 +176,7 @@ exclude:
     - .gitignore
     - s3_website.yml
     - .env
+    - .markdownlint.yaml
     - moab.news
     - scripts/
     - README.md
