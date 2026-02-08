@@ -1,9 +1,9 @@
 ---
 award:
-    category: 2023 Azbee Awards of Excellence Northeast Region Award Winners
+    category: Azbee Awards of Excellence, Northeast Region
     title: Best Web How-to Article
-    position: Regional Bronze Award, 2023
-    hash: best-podcast-2023
+    position: Bronze Award, 2023
+    hash: best-how-to
     color: bronze
 
 awardee:
