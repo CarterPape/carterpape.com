@@ -22,8 +22,8 @@ proof:
     license = "exclusive use"
 %}
 
-This how-to article regarded a regulatory crackdown by the Securities and Exchange Commission on broker-dealers and their affiliates whose employees used WhatsApp to communicate in their work.
+This how-to article explains a regulatory crackdown by the Securities and Exchange Commission on broker-dealers and their affiliates whose employees used WhatsApp to communicate in their work.
 
-The article explained the implications for banks that are not involved in investment banking --- in particular, what policies these banks should consider about the use of personal devices and accounts for work.
+The article detailed the implications for banks that are not involved in investment banking --- in particular, what policies these banks should consider about the use of personal devices and accounts for work.
 
 The competition class for this award was regional, including New York-based publications, and based on nominations.

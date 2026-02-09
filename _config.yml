@@ -23,6 +23,8 @@ collections:
     journalism:
         output: false
         order:
+            - how-quantum-computers-work.md
+            - whatsapp-wall-street.md
             - hb-224-intent.md
             - housing-series.md
             - fox-in-mill-creek.md
