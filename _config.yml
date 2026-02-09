@@ -60,6 +60,7 @@ collections:
     photography:
         output: false
         order:
+            - cormorant.md
             - potato-salad.md
             - bat.md
             - blm.md
