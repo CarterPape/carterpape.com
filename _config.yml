@@ -148,7 +148,6 @@ liquid:
 strict_front_matter: true
 
 sass:
-    implementation: sass-embedded
     style: compressed
     sass_dir: _scss
 
@@ -165,22 +164,7 @@ reduce_title_redundancy:
 # Excluded items can be processed by explicitly listing the directories or their entries' file path in the `include:` list.
 
 exclude:
-    - .sass-cache/
-    - .jekyll-cache/
-    - gemfiles/
-    - Gemfile
-    - Gemfile.lock
-    - node_modules/
-    - vendor.noindex/
-    - bin/
-    - .gitignore
-    - s3_website.yml
-    - .env
-    - .markdownlint.yaml
-    - moab.news
     - scripts/
-    - README.md
+    - vendor.noindex/
     - LICENSE
-    - package.json
-    - package-lock.json
-    - webpack.config.babel.js
+    - README.md
