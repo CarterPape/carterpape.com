@@ -39,7 +39,8 @@ dev () {
         --incremental \
         --host $DEV_HOST_NAME \
         --port $DEV_PORT \
-        --livereload-port $DEV_LIVERELOAD_PORT
+        --livereload-port $DEV_LIVERELOAD_PORT \
+        --drafts
 }
 
 test () {
