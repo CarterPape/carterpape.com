@@ -2,7 +2,7 @@
 permalink: /résumé/
 layout: browsing/single-card
 title: résumé
-last_updated: Feb. 7, 2026
+last_updated: Apr. 17, 2026
 
 redirect_from: /resume/
 
@@ -25,7 +25,7 @@ I have seven years of professional experience in the field of journalism, one ye
 #### January 2022 - now
 
 - I write timely news and analysis about [cyber attacks](https://www.americanbanker.com/news/inside-a-sophisticated-foiled-cyber-heist-targeting-atms), [fraud](https://www.americanbanker.com/news/banks-are-using-a-cybersecurity-tactic-to-crack-down-on-check-fraud), [scams](https://www.americanbanker.com/news/jpmorganchase-wells-fargo-capital-one-issue-scam-warnings), [money laundering](https://www.americanbanker.com/news/how-a-td-bank-teller-laundered-millions-for-50-bribes), [quantum computing](https://www.americanbanker.com/news/how-quantum-computers-work-and-how-banks-can-use-them), and [artificial intelligence](https://www.americanbanker.com/news/how-would-new-regulations-on-advanced-ai-affect-banks).
-- My coverage also extends into the broader world of technology, to [award-winning effect]({% link awards.html %}#best-how-to).
+- My coverage also extends into the broader world of technology, to [award-winning]({% link awards.html %}#best-how-to) [effect]({% link awards.html %}#best-technical-2026).
 - I [moderate panels](https://digital-banking.americanbanker.com/profile/carter-pape/) on an annual basis at American Banker's Digital Banking conference.
 - On average, I write at least 4 articles per week.
 

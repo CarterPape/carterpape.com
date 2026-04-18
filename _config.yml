@@ -42,6 +42,7 @@ collections:
     awards:
         output: false
         order:
+            - best-technical-2026.md
             - best-how-to.md
             - best-gov-pol-story.md
             - best-general-news.md
