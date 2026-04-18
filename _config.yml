@@ -172,3 +172,4 @@ exclude:
     - vendor.noindex/
     - LICENSE
     - README.md
+    - CLAUDE.md
