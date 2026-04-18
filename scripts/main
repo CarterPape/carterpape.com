@@ -34,7 +34,20 @@ EOM
 
 PATH="$(brew --prefix ruby)/bin:$PATH"
 
+# Homebrew Ruby upgrades reinstall rubygems but not bundler, so the shim fails
+# looking for the version pinned in Gemfile.lock. Install it if missing.
+ensure_bundler () {
+    local lockfile="$project_dir_path/Gemfile.lock"
+    [[ -f $lockfile ]] || return 0
+    local pinned=$(awk '/^BUNDLED WITH$/ {getline; gsub(/^ +| +$/, ""); print; exit}' "$lockfile")
+    [[ -n $pinned ]] || return 0
+    gem list -i -e bundler -v "$pinned" >/dev/null 2>&1 && return 0
+    echo "Installing bundler $pinned (missing after a Ruby upgrade)..."
+    gem install bundler -v "$pinned" --no-document
+}
+
 dev () {
+    ensure_bundler
     bundle exec jekyll serve \
         --incremental \
         --host $DEV_HOST_NAME \
@@ -44,6 +57,7 @@ dev () {
 }
 
 test () {
+    ensure_bundler
     # check_names --print-on-fail
     # check_for_archived_pages
     production_build
@@ -63,10 +77,12 @@ test () {
 }
 
 production_build () {
+    ensure_bundler
     JEKYLL_ENV="production" bundle exec jekyll build
 }
 
 push () {
+    ensure_bundler
     # check_names --die-on-fail
     # archive_new_links
     production_build
@@ -99,6 +115,7 @@ push () {
 }
 
 init_env () {
+    ensure_bundler
     bundle config set path "$project_dir_path/vendor.noindex"
     bundle config set bin "$project_dir_path/bin"
     bundle install
@@ -122,6 +139,7 @@ check_names () {
 }
 
 proof_html () {
+    ensure_bundler
     bundle exec htmlproofer $site_path \
         --typhoeus="$browser_headers" \
         --checks Links,Images,Scripts,Favicon,OpenGraph \
