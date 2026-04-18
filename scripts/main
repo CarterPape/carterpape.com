@@ -91,16 +91,28 @@ push () {
     
     aws sso login
     
-    rclone sync         \
-        --checksum      \
-        --progress      \
-        --fast-list     \
-        --track-renames \
-        $site_path      \
+    local rclone_log="$project_dir_path/tmp/rclone.log"
+    mkdir -p "$(dirname $rclone_log)"
+    # -v --log-file captures one INFO line per Copy/Delete so the purge
+    # script can read exactly what changed without re-scanning the
+    # bucket.
+    rclone sync               \
+        --checksum            \
+        --progress            \
+        --fast-list           \
+        --track-renames       \
+        --log-file=$rclone_log \
+        -v                    \
+        $site_path            \
         $production_bucket
-    
+
+    # Cache purge runs after sync, so if it fails the origin is already
+    # current — worst case visitors see stale copies until Cloudflare's
+    # TTL expires. Don't let a purge failure abort the git push.
+    uv run $project_dir_path/scripts/purge_cloudflare_cache.py \
+        || echo "Warning: cache purge failed; visitors may see stale content until Cloudflare's TTL expires."
+
     # TODO: set the caching headers on all files that need it (maybe with https://s3tools.org/s3cmd)
-    # TODO: purge the CloudFlare cache of updated files
     # TODO: turn _site/redirects into a Cloudflare bulk redirect list
     
     git pull
@@ -167,8 +179,12 @@ proof_html () {
         --htmlproofer-output $output_file
 }
 
+purge_cache () {
+    uv run $project_dir_path/scripts/purge_cloudflare_cache.py
+}
+
 subcommand="${1}"
-case ${subcommand} in 
+case ${subcommand} in
     dev)
         dev
         ;;
@@ -187,8 +203,11 @@ case ${subcommand} in
     proof_html)
         proof_html
         ;;
+    purge_cache)
+        purge_cache
+        ;;
     *)
-        echo "`basename ${0}`: usage: dev | test | push | init_env | reset_ruby | proof_html"
+        echo "`basename ${0}`: usage: dev | test | push | init_env | reset_ruby | proof_html | purge_cache"
         exit 1
         ;;
 esac

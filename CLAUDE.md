@@ -8,15 +8,16 @@ Carter Pape's personal website, a Jekyll site deployed as a static bundle to S3 
 
 ## Common commands
 
-All day-to-day operations go through `scripts/main` (a zsh dispatcher). It sources `.env` (which provides `DEV_HOST_NAME`, `DEV_PORT`, `DEV_LIVERELOAD_PORT`) and prepends Homebrew's Ruby to `PATH`.
+All day-to-day operations go through `scripts/main` (a zsh dispatcher). It sources `.env` (which provides `DEV_HOST_NAME`, `DEV_PORT`, `DEV_LIVERELOAD_PORT`, and — for the cache-purge step — `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ZONE_ID`) and prepends Homebrew's Ruby to `PATH`.
 
 - `scripts/main dev` — `jekyll serve` with `--incremental --drafts` and livereload. Drafts under `the-blog/_drafts/` are rendered in dev.
 - `scripts/main init_env` — first-time setup: `bundle config` to vendor gems into `vendor.noindex/` and `bundle install`.
 - `scripts/main reset_ruby` — nuclear reset of `vendor.noindex/`, `Gemfile.lock`, `bin/`; then reinstalls bundler and runs `init_env`.
 - `scripts/main production_build` is not a subcommand, but `test` and `push` invoke `JEKYLL_ENV=production bundle exec jekyll build` internally.
-- `scripts/main proof_html` — runs `htmlproofer` against `_site/` with a real-browser UA, checks `Links,Images,Scripts,Favicon,OpenGraph`, 2-week external cache, and swaps `carterpape.com` URLs for local ones.
+- `scripts/main proof_html` — runs `htmlproofer` against `_site/` with a real-browser UA, checks `Links,Images,Scripts,Favicon,OpenGraph`, 2-week external cache, and swaps `carterpape.com` URLs for local ones. On failure, hands the captured output to `scripts/check_external_links.py`, which retries each flagged URL through the self-hosted FireCrawl at `localhost:3002` and prompts via macOS dialog for anything still unresolved. Verified-alive answers cache for 2 weeks in `tmp/link-verification-cache.json`.
 - `scripts/main test` — production build + htmlproofer + `aws sso login` + `rclone sync --dry-run` to the S3 bucket.
-- `scripts/main push` — production build + htmlproofer + `aws sso login` + real `rclone sync` to `s3-for-carterpape-com:carterpape.com`, then `git pull && git push`. git-lfs may prompt for a GitHub PAT.
+- `scripts/main push` — production build + htmlproofer + `aws sso login` + real `rclone sync` (with `-v --log-file=tmp/rclone.log`) to `s3-for-carterpape-com:carterpape.com`, then Cloudflare cache purge for just the synced paths, then `git pull && git push`. git-lfs may prompt for a GitHub PAT.
+- `scripts/main purge_cache` — runs just the Cloudflare purge against whatever's in `tmp/rclone.log`. Useful if the post-push purge failed and you need to retry without re-syncing.
 
 There is no test suite; `htmlproofer` is the closest thing to CI. There is no CI workflow — deployment is manual via `scripts/main push`.
 
