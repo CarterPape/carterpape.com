@@ -140,16 +140,32 @@ check_names () {
 
 proof_html () {
     ensure_bundler
+    local output_file="$project_dir_path/tmp/htmlproofer.out"
+    mkdir -p "$(dirname $output_file)"
+
+    # linkedin.com/in/carter-pape is linked from every page (footer) and
+    # linkedin always returns 999 to bots — fingerprinting on TLS + IP, not
+    # just User-Agent — so no scraper can validate it. Skip it here so the
+    # fallback verifier doesn't waste a firecrawl call on it every deploy.
     bundle exec htmlproofer $site_path \
         --typhoeus="$browser_headers" \
         --checks Links,Images,Scripts,Favicon,OpenGraph \
+        --ignore_urls '/^https?:\/\/(www\.)?linkedin\.com\/in\/carter-pape\/?$/' \
         --cache '{"timeframe": {"external": "2w"}}' \
         --swap_urls '^((https?\:)?//)?carterpape\.com:' \
-        --no-check_external_hash
-}
+        --no-check_external_hash \
+        2>&1 | tee $output_file
+    local rc=${pipestatus[1]}
 
-# TODO: Consider upgrading html-proofer or switching to a link checker that can better handle anti-scraping measures (like status 999/4xx)
-#       and allows for link checking parallelism control.
+    if [[ $rc -eq 0 ]]; then
+        return 0
+    fi
+
+    echo
+    echo "htmlproofer exited $rc; running supplementary external-link verifier..."
+    uv run $project_dir_path/scripts/check_external_links.py \
+        --htmlproofer-output $output_file
+}
 
 subcommand="${1}"
 case ${subcommand} in 

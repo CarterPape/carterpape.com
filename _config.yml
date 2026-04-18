@@ -170,6 +170,7 @@ reduce_title_redundancy:
 exclude:
     - scripts/
     - vendor.noindex/
+    - tmp/
     - LICENSE
     - README.md
     - CLAUDE.md
