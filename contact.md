@@ -1,7 +1,7 @@
 ---
 layout: "browsing/single-card"
 title: contact
-last_updated: "June 30, 2024"
+last_updated: "Apr. 26, 2026"
 
 seo:
     type: ContactPage
