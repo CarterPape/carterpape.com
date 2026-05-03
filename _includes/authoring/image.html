@@ -1,5 +1,5 @@
 {%- assign html_content = nil -%}
-{%- assign original_image_url = nil -%}
+{%- assign transform_source = nil -%}
 {%- assign credit = nil -%}
 {%- assign license = nil -%}
 {%- assign license_link = nil -%}
@@ -9,15 +9,17 @@
     {%- assign full_width_if_applicable = nil -%}
 {%- endif -%}
 
-{%- capture original_image_url -%}
+{%- comment -%}
+    Source for Cloudflare Image Transformations (/cdn-cgi/image/<options>/<source>).
+    Stripped of any leading slash so the URL prefix's trailing slash is the only
+    separator. Off-site image_urls pass through as absolute URLs (those hosts must
+    be in the zone's allowed transform sources).
+{%- endcomment -%}
+{%- capture transform_source -%}
     {%- if include.image_url and include.image_url != nil and include.image_url != "" -%}
         {{- include.image_url -}}
     {%- elsif include.image_path -%}
-        {%- if site.env != "production" -%}
-            {{- include.image_path | relative_url | prepend: "https://carterpape.com" -}}
-        {%- else -%}
-            {{- include.image_path | absolute_url -}}
-        {%- endif -%}
+        {{- include.image_path | relative_url | remove_first: "/" -}}
     {%- endif -%}
 {%- endcapture -%}
 
@@ -48,19 +50,19 @@
                 <source
                     type="image/webp"
                     srcset="
-                        https://images.weserv.nl?url={{ original_image_url }}&w=560&output=webp&we 1x,
-                        https://images.weserv.nl?url={{ original_image_url }}&w=1120&output=webp&we 2x,
-                        https://images.weserv.nl?url={{ original_image_url }}&w=1680&output=webp&we 3x,
-                        https://images.weserv.nl?url={{ original_image_url }}&w=2240&output=webp&we 4x,
+                        /cdn-cgi/image/width=560,format=webp,fit=scale-down/{{ transform_source }} 1x,
+                        /cdn-cgi/image/width=1120,format=webp,fit=scale-down/{{ transform_source }} 2x,
+                        /cdn-cgi/image/width=1680,format=webp,fit=scale-down/{{ transform_source }} 3x,
+                        /cdn-cgi/image/width=2240,format=webp,fit=scale-down/{{ transform_source }} 4x,
                     "
                 />
                 <source
                     type="image/jpeg"
                     srcset="
-                        https://images.weserv.nl?url={{ original_image_url }}&w=560&we 1x,
-                        https://images.weserv.nl?url={{ original_image_url }}&w=1120&we 2x,
-                        https://images.weserv.nl?url={{ original_image_url }}&w=1680&we 3x,
-                        https://images.weserv.nl?url={{ original_image_url }}&w=2240&we 4x,
+                        /cdn-cgi/image/width=560,format=jpeg,fit=scale-down/{{ transform_source }} 1x,
+                        /cdn-cgi/image/width=1120,format=jpeg,fit=scale-down/{{ transform_source }} 2x,
+                        /cdn-cgi/image/width=1680,format=jpeg,fit=scale-down/{{ transform_source }} 3x,
+                        /cdn-cgi/image/width=2240,format=jpeg,fit=scale-down/{{ transform_source }} 4x,
                     "
                 />
                 <img
@@ -69,7 +71,7 @@
                     {% elsif include.image_path %}
                         {% imagesize include.image_path:props %}
                     {% endif %}
-                    src="https://images.weserv.nl?url={{ original_image_url }}&w=560&output=jpg&we"
+                    src="/cdn-cgi/image/width=560,format=jpeg,fit=scale-down/{{ transform_source }}"
                     alt="{{ include.alt | escape }}"
                 />
             {%- endif -%}

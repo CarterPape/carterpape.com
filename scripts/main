@@ -157,12 +157,18 @@ proof_html () {
     # linkedin always returns 999 to bots — fingerprinting on TLS + IP, not
     # just User-Agent — so no scraper can validate it. Skip it here so the
     # fallback verifier doesn't waste a firecrawl call on it every deploy.
+    #
+    # /cdn-cgi/image/<opts>/<source> URLs are Cloudflare Image Transformations,
+    # served only from the production zone. The swap rewrites the path-based
+    # variant to its underlying source so htmlproofer validates the local file;
+    # the ignore catches the URL-based variant (off-site sources), which can't
+    # be locally validated.
     bundle exec htmlproofer $site_path \
         --typhoeus="$browser_headers" \
         --checks Links,Images,Scripts,Favicon,OpenGraph \
-        --ignore_urls '/^https?:\/\/(www\.)?linkedin\.com\/in\/carter-pape\/?$/' \
+        --ignore_urls '/^https?:\/\/(www\.)?linkedin\.com\/in\/carter-pape\/?$/,/\/cdn-cgi\/image\/[^\/]+\/https/' \
         --cache '{"timeframe": {"external": "2w"}}' \
-        --swap_urls '^((https?\:)?//)?carterpape\.com:' \
+        --swap_urls '^((https?\:)?//)?carterpape\.com:,^/cdn-cgi/image/[^/]+/:/' \
         --no-check_external_hash \
         2>&1 | tee $output_file
     local rc=${pipestatus[1]}
