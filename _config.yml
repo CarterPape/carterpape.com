@@ -171,6 +171,7 @@ exclude:
     - scripts/
     - vendor.noindex/
     - tmp/
+    - pape-docs/
     - LICENSE
     - README.md
     - CLAUDE.md
