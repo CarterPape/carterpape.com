@@ -63,6 +63,8 @@ test () {
     production_build
 
     check_transform_sources
+    check_path_periods
+    check_path_uppercase
     proof_html
 
     rclone sync         \
@@ -90,6 +92,8 @@ push () {
     production_build
 
     check_transform_sources
+    check_path_periods
+    check_path_uppercase
     proof_html
 
     local rclone_log="$project_dir_path/tmp/rclone.log"
@@ -202,6 +206,14 @@ check_transform_sources () {
     uv run $project_dir_path/scripts/check_transform_sources.py
 }
 
+check_path_periods () {
+    uv run $project_dir_path/scripts/check_path_periods.py
+}
+
+check_path_uppercase () {
+    uv run $project_dir_path/scripts/check_path_uppercase.py
+}
+
 subcommand="${1}"
 case ${subcommand} in
     dev)
@@ -228,8 +240,14 @@ case ${subcommand} in
     check_transform_sources)
         check_transform_sources
         ;;
+    check_path_periods)
+        check_path_periods
+        ;;
+    check_path_uppercase)
+        check_path_uppercase
+        ;;
     *)
-        echo "`basename ${0}`: usage: dev | test | push | init_env | reset_ruby | proof_html | purge_cache | check_transform_sources"
+        echo "`basename ${0}`: usage: dev | test | push | init_env | reset_ruby | proof_html | purge_cache | check_transform_sources | check_path_periods | check_path_uppercase"
         exit 1
         ;;
 esac
