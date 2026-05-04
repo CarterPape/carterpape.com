@@ -33,7 +33,12 @@ import httpx
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 REDIRECTS_PATH = PROJECT_DIR / "_site" / "redirects.json"
-SOURCE_HOST = "carterpape.com"
+# `source_url` must match `http.request.full_uri` literally — that field always
+# carries the scheme, so list items without `https://` never match. The
+# OpenAPI example shows a scheme-less form, but the JSON-objects reference
+# and the Terraform/country-redirect docs all include the scheme. Origin: a
+# scheme-less PUT silently produced 200s instead of 301s on every request.
+SOURCE_ORIGIN = "https://carterpape.com"
 API_BASE = "https://api.cloudflare.com/client/v4"
 POLL_TIMEOUT_SECONDS = 60.0
 POLL_INTERVAL_SECONDS = 1.0
@@ -56,12 +61,24 @@ def build_local_items(redirects_map: dict[str, str]) -> list[dict[str, Any]]:
     """Translate jekyll-redirect-from's flat map into Cloudflare items.
 
     Input keys look like "/news-clips/" or "/blog/decompiling-facebook/...".
-    Cloudflare's source_url needs the host: "carterpape.com/news-clips/".
+    Cloudflare's `source_url` is matched against `http.request.full_uri` after
+    the zone-level URL Rewrite phase — and that phase has a "trailing slash →
+    /index.html" rewrite to make R2 serve directory-style paths. So a request
+    for "/news-clips/" reaches the bulk-redirect rule as
+    "https://carterpape.com/news-clips/index.html". We mirror that suffix
+    here so the list entries actually match.
     """
     items: list[dict[str, Any]] = []
     for source_path, target_url in redirects_map.items():
         # Source path always begins with "/" in jekyll-redirect-from output.
-        source_url = f"{SOURCE_HOST}{source_path}"
+        # Normalize to "/.../index.html" so the entry matches whatever the
+        # URL Rewrite produces, regardless of whether the original front
+        # matter had a trailing slash. (A no-slash path like
+        # "/foo/whatsapp" gets a trailing slash added by the
+        # http_request_dynamic_redirect rule, then /index.html appended by
+        # the URL Rewrite.)
+        rewritten_path = source_path.rstrip("/") + "/index.html"
+        source_url = f"{SOURCE_ORIGIN}{rewritten_path}"
         items.append(
             {
                 "redirect": {
