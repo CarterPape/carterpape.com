@@ -73,6 +73,9 @@ test () {
         --track-renames \
         $site_path      \
         $production_bucket
+
+    uv run $project_dir_path/scripts/sync_cloudflare_redirects.py --dry-run \
+        || echo "Warning: redirects dry-run failed; check token scope and IDs."
 }
 
 production_build () {
@@ -104,14 +107,19 @@ push () {
         $site_path            \
         $production_bucket
 
+    # Update edge redirect rules before purging cache: that way any
+    # cached 200 of an old meta-refresh stub gets replaced by a fresh
+    # 301 from the edge. If this fails the meta-refresh stubs at origin
+    # still cover the same paths, so we warn rather than abort.
+    uv run $project_dir_path/scripts/sync_cloudflare_redirects.py \
+        || echo "Warning: redirects sync failed; meta-refresh fallback at origin still covers these paths."
+
     # Cache purge runs after sync, so if it fails the origin is already
     # current — worst case visitors see stale copies until Cloudflare's
     # TTL expires. Don't let a purge failure abort the git push.
     uv run $project_dir_path/scripts/purge_cloudflare_cache.py \
         || echo "Warning: cache purge failed; visitors may see stale content until Cloudflare's TTL expires."
 
-    # TODO: turn _site/redirects into a Cloudflare bulk redirect list
-    
     git pull
     git push
 
