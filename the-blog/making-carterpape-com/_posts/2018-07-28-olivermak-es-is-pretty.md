@@ -64,7 +64,7 @@ As I browsed Pattison's website, I was looking for display elements that might b
 {% capture content %}
 ![a screenshot of a code snippet from Pattison's website, featuring a caption on the code block that is half the width of the element itself and right justified][image: Pattison's use of code capture]
 
-[image: Pattison's use of code capture]: https://s3.amazonaws.com/carterpape-assets/Oliver's+code+caption.png "an example of Pattison's use of captions"
+[image: Pattison's use of code capture]: /assets/posts/legacy/olivers-code-caption.png "an example of Pattison's use of captions"
 {% endcapture %}
 
 {% capture caption %}
@@ -143,7 +143,7 @@ This means that, as I was attempting to figure out how Pattison was generating c
 {% capture content %}
 ![a screenshot of one subdirectory of Pattison's _includes folder, featuring a list of about 10 files, all starting with the letter 'i'][image: Pattison's include directory]
 
-[image: Pattison's include directory]: https://s3.amazonaws.com/carterpape-assets/Oliver's+includes+directory.png "a screen shot of one subdirectory of Pattison's _includes folder"
+[image: Pattison's include directory]: /assets/posts/legacy/olivers-includes-directory.png "a screen shot of one subdirectory of Pattison's _includes folder"
 {% endcapture %}
 
 {% capture caption %}
@@ -176,7 +176,7 @@ This subtle difference (alongside likely differences in philosophy about how bes
 {% capture content %}
 ![a side-by-side view of olivermak.es and carterpape.com][image: side-by-side]
 
-[image: side-by-side]: https://s3.amazonaws.com/carterpape-assets/side-by-side.png
+[image: side-by-side]: /assets/posts/legacy/side-by-side.png
 {% endcapture %}
 
 {% capture caption %}

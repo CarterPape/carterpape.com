@@ -72,11 +72,11 @@ If you are interested to see [the original Adobe Illustrator file][design in ai]
 
 [^CHINA]: They also have periodic [editorializing][Oliver Reichenstein on China] about tech-related topics on the blog.
 
-[design in ai]: https://s3.amazonaws.com/carterpape-assets/how+the+app+will+look.zip "direct download of the original .ai file and related assets"
-[design in pdf]: https://s3.amazonaws.com/carterpape-assets/how+the+app+will+look.pdf "direct download of a .pdf version of the write app rendering"
+[design in ai]: /assets/posts/legacy/how-the-app-will-look.zip "direct download of the original .ai file and related assets"
+[design in pdf]: /assets/posts/legacy/how-the-app-will-look.pdf "direct download of a .pdf version of the write app rendering"
 [Oliver Reichenstein on China]: https://ia.net/topics/designed-in-china-assembled-in-california
 [Paper]: https://www.papereditor.app/ "link to the app's website"
-[Paper screenshot]: https://s3.amazonaws.com/carterpape-assets/paper-screenshot.png "a screenshot of Paper, the app I am currently using and upon whose functionalities I seek to improve"
-[write render]: https://s3.amazonaws.com/carterpape-assets/write-render.png "a render of write, the app, created with Adobe Illustrator"
+[Paper screenshot]: /assets/posts/legacy/paper-screenshot.png "a screenshot of Paper, the app I am currently using and upon whose functionalities I seek to improve"
+[write render]: /assets/posts/legacy/write-render.png "a render of write, the app, created with Adobe Illustrator"
 
 [naming the app]: {% link the-blog/making-write/_posts/2018-07-23-naming.md %} "blog post about how I named write, the app"
