@@ -62,6 +62,7 @@ test () {
     # check_for_archived_pages
     production_build
 
+    check_transform_sources
     proof_html
 
     rclone sync         \
@@ -85,6 +86,7 @@ push () {
     # archive_new_links
     production_build
 
+    check_transform_sources
     proof_html
 
     local rclone_log="$project_dir_path/tmp/rclone.log"
@@ -154,16 +156,22 @@ proof_html () {
     # fallback verifier doesn't waste a firecrawl call on it every deploy.
     #
     # /cdn-cgi/image/<opts>/<source> URLs are Cloudflare Image Transformations,
-    # served only from the production zone. The swap rewrites the path-based
-    # variant to its underlying source so htmlproofer validates the local file;
-    # the ignore catches the URL-based variant (off-site sources), which can't
-    # be locally validated.
+    # served only from the production zone. Two variants, three swap rules:
+    #   1. URL-based (off-site source) — prepend the production domain so
+    #      htmlproofer validates the actual transformed URL against
+    #      Cloudflare. This catches transformer failures (e.g., 403 when the
+    #      source host isn't on the zone's allowed-sources list) that
+    #      locally-rendered HTML can't surface.
+    #   2. Path-based (local source) — strip the cdn-cgi prefix so
+    #      htmlproofer validates the underlying file in _site/.
+    #   3. Strip carterpape.com on regular links — but with a negative
+    #      lookahead so rule 1's prepended absolute URL survives untouched.
     bundle exec htmlproofer $site_path \
         --typhoeus="$browser_headers" \
         --checks Links,Images,Scripts,Favicon,OpenGraph \
-        --ignore_urls '/^https?:\/\/(www\.)?linkedin\.com\/in\/carter-pape\/?$/,/\/cdn-cgi\/image\/[^\/]+\/https/' \
+        --ignore_urls '/^https?:\/\/(www\.)?linkedin\.com\/in\/carter-pape\/?$/' \
         --cache '{"timeframe": {"external": "2w"}}' \
-        --swap_urls '^((https?\:)?//)?carterpape\.com:,^/cdn-cgi/image/[^/]+/:/' \
+        --swap_urls '^/cdn-cgi/image/([^/]+)/(?=https):https\://carterpape.com/cdn-cgi/image/\1/,^/cdn-cgi/image/[^/]+/(?!https):/,^((https?\:)?//)?carterpape\.com(?!/cdn-cgi/image):' \
         --no-check_external_hash \
         2>&1 | tee $output_file
     local rc=${pipestatus[1]}
@@ -180,6 +188,10 @@ proof_html () {
 
 purge_cache () {
     uv run $project_dir_path/scripts/purge_cloudflare_cache.py
+}
+
+check_transform_sources () {
+    uv run $project_dir_path/scripts/check_transform_sources.py
 }
 
 subcommand="${1}"
@@ -205,8 +217,11 @@ case ${subcommand} in
     purge_cache)
         purge_cache
         ;;
+    check_transform_sources)
+        check_transform_sources
+        ;;
     *)
-        echo "`basename ${0}`: usage: dev | test | push | init_env | reset_ruby | proof_html | purge_cache"
+        echo "`basename ${0}`: usage: dev | test | push | init_env | reset_ruby | proof_html | purge_cache | check_transform_sources"
         exit 1
         ;;
 esac
