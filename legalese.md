@@ -29,3 +29,7 @@ The following icons are by Font Awesome, [licensed CC BY 4.0](https://fontawesom
 I am not always the copyright holder on photos I use on this website. In these cases, if the work is not licensed for public use, I label it as "licensed for exclusive use".
 
 Common examples on this website of such works include photographs I took for *The Times-Independent*, which [owns the copyright for the work even if I took it]({% link assets/pages/legalese/circ09.pdf %}), and photographs for which *American Banker* purchased a license from Adobe Stock to use.
+
+## plaid-whisperer
+
+I am building a personal project that uses Plaid to access my financial account information. To use the Plaid platform, I must publish a privacy policy. So, although this is just a personal project, it has a privacy policy, and it is public, accessible [here]({% link legalese/plaid-whisperer-privacy.md %}).

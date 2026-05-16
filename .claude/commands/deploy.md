@@ -29,6 +29,7 @@ scripts/main test
 ```
 
 This runs, in order:
+
 1. `JEKYLL_ENV=production bundle exec jekyll build` — the real production build (minification on, etc.), which is stricter than the dev build `/wrap-up` runs.
 2. `check_transform_sources` — HEADs every Cloudflare Image Transformation source URL through the production zone; fails the deploy if any source isn't on the dashboard's allowed list.
 3. `htmlproofer` against `_site/` — checks `Links,Images,Scripts,Favicon,OpenGraph`, with a 2-week external-link cache. This is slow the first time; subsequent runs within the cache window are fast.
