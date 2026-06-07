@@ -150,7 +150,7 @@ The 2019 version of `moabtimes.com` is a project of which I am very proud and on
 
     So, it gets a few good comments.
 
-[^WordPress-popularity]: WordPress is [15x more widely used](https://w3techs.com/technologies/overview/content_management) than the second most widely used CMS, as of writing.
+[^WordPress-popularity]: WordPress is 15x more widely used than the second most widely used CMS, as of writing.
 
 [^WordPress-quality]:
     Here are some reviews of WordPress:
