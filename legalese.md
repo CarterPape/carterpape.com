@@ -1,6 +1,6 @@
 ---
 layout: browsing/single-card
-last_updated: "July 11, 2024"
+last_updated: "June 7, 2026"
 ---
 
 # legalese
@@ -30,6 +30,6 @@ I am not always the copyright holder on photos I use on this website. In these c
 
 Common examples on this website of such works include photographs I took for *The Times-Independent*, which [owns the copyright for the work even if I took it]({% link assets/pages/legalese/circ09.pdf %}), and photographs for which *American Banker* purchased a license from Adobe Stock to use.
 
-## plaid-whisperer
+## Plaid tooling
 
-I am building a personal project that uses Plaid to access my financial account information. To use the Plaid platform, I must publish a privacy policy. So, although this is just a personal project, it has a privacy policy, and it is public, accessible [here]({% link legalese/plaid-whisperer-privacy.md %}).
+I maintain a family of personal projects that use Plaid to access my own financial account information. To use the Plaid platform, I must publish a privacy policy. So, although these are just personal projects, they have a public [privacy policy]({% link legalese/plaid-privacy.md %}).

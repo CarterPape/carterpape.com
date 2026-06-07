@@ -1,16 +1,17 @@
 ---
 layout: "browsing/single-card"
-title: "plaid-whisperer Privacy Policy"
-last_updated: "May 15, 2026"
+title: "Plaid-API Tooling Privacy Policy"
+last_updated: "June 7, 2026"
+redirect_from: /legalese/plaid-whisperer-privacy/
 ---
 
 **Owner:** Carter Pape  
-**Effective:** 2026-05-15  
+**Effective:** 2026-05-15 (org-level recast 2026-06-07)  
 **Review cadence:** annually, or on material change
 
 ## Who this covers
 
-**plaid-whisperer** is a personal, non-commercial utility operated by Carter Pape. It uses [Plaid](https://plaid.com) to retrieve financial data for accounts that the operator and household members explicitly connect. It is **not** offered to the public; the only data subjects are the operator and consenting household members.
+**Carter Pape's Plaid-API tooling** is a family of personal, non-commercial utilities operated by Carter Pape. They use [Plaid](https://plaid.com) to retrieve financial data for accounts that the operator and household members explicitly connect. They are **not** offered to the public; the only data subjects are the operator and consenting household members. This policy applies to all of them.
 
 ## What data is collected 📋
 
