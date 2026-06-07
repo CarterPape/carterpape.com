@@ -34,15 +34,14 @@ EOM
 
 PATH="$(brew --prefix ruby)/bin:$PATH"
 
-# Homebrew Ruby upgrades reinstall rubygems but not bundler, so the shim fails
-# looking for the version pinned in Gemfile.lock. Install it if missing.
+# Homebrew/rbenv Ruby upgrades can leave the pinned bundler present only as a *default gem*, which has no exe/bundle binstub — so the `bundle` shim dies with a LoadError even though `gem list -i` reports it "installed". Test for the actual binstub the shim loads, and do a real `gem install` only if it's missing.
 ensure_bundler () {
     local lockfile="$project_dir_path/Gemfile.lock"
     [[ -f $lockfile ]] || return 0
     local pinned=$(awk '/^BUNDLED WITH$/ {getline; gsub(/^ +| +$/, ""); print; exit}' "$lockfile")
     [[ -n $pinned ]] || return 0
-    gem list -i -e bundler -v "$pinned" >/dev/null 2>&1 && return 0
-    echo "Installing bundler $pinned (missing after a Ruby upgrade)..."
+    [[ -f "$(gem environment gemdir)/gems/bundler-$pinned/exe/bundle" ]] && return 0
+    echo "Installing bundler $pinned (present only as a default gem; the shim needs a real install)..."
     gem install bundler -v "$pinned" --no-document
 }
 
