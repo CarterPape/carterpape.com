@@ -15,29 +15,12 @@
     />
     
     {%- seo -%}
-    {%- capture now -%}
-        {{- "now" | date: "%Y-%m-%dT%H_%M" -}}
-    {%- endcapture -%}
     <link
-        href="
-            {{-
-                'assets/style/main.css'
-                | relative_url
-                | append: '?v='
-                | append: now
-            -}}
-        "
+        href="{{- 'assets/style/main.css' | cache_bust -}}"
         rel="stylesheet"
     />
     <link
-        href="
-            {{-
-                'assets/style/pygment_trac.css'
-                | relative_url
-                | append: '?v='
-                | append: now
-            -}}
-        "
+        href="{{- 'assets/style/pygment_trac.css' | cache_bust -}}"
         rel="stylesheet"
     />
     
@@ -79,14 +62,7 @@
     />
     
     <script
-        src="
-            {{-
-                'assets/js/main.js'
-                | relative_url
-                | append: '?v='
-                | append: now
-            -}}
-        "
+        src="{{- 'assets/js/main.js' | cache_bust -}}"
         defer
     ></script>
     
