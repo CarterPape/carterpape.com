@@ -32,9 +32,7 @@ browser_headers=$(cat <<EOM
 EOM
 )
 
-PATH="$(brew --prefix ruby)/bin:$PATH"
-
-# Homebrew/rbenv Ruby upgrades can leave the pinned bundler present only as a *default gem*, which has no exe/bundle binstub — so the `bundle` shim dies with a LoadError even though `gem list -i` reports it "installed". Test for the actual binstub the shim loads, and do a real `gem install` only if it's missing.
+# Ruby upgrades can leave the pinned bundler present only as a *default gem*, which has no exe/bundle binstub — so the `bundle` shim dies with a LoadError even though `gem list -i` reports it "installed". Test for the actual binstub the shim loads, and do a real `gem install` only if it's missing.
 ensure_bundler () {
     local lockfile="$project_dir_path/Gemfile.lock"
     [[ -f $lockfile ]] || return 0

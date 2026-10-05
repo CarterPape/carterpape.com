@@ -8,7 +8,7 @@ Carter Pape's personal website, a Jekyll site deployed as a static bundle to a C
 
 ## Common commands
 
-All day-to-day operations go through `scripts/main` (a zsh dispatcher). It sources `.env` (which provides `DEV_HOST_NAME`, `DEV_PORT`, `DEV_LIVERELOAD_PORT`, and — for the cache-purge step — `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ZONE_ID`) and prepends Homebrew's Ruby to `PATH`.
+All day-to-day operations go through `scripts/main` (a zsh dispatcher). It sources `.env` (which provides `DEV_HOST_NAME`, `DEV_PORT`, `DEV_LIVERELOAD_PORT`, and — for the cache-purge step — `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ZONE_ID`). Ruby comes from rbenv (global version, shims on `PATH` via `~/.zshrc`); `.ruby-version` is gitignored. After switching Ruby installs, `scripts/main reset_ruby` rebuilds the native gems in `vendor.noindex/`.
 
 - `scripts/main dev` — `jekyll serve` with `--incremental --drafts` and livereload. Drafts under `the-blog/_drafts/` are rendered in dev.
 - `scripts/main init_env` — first-time setup: `bundle config` to vendor gems into `vendor.noindex/` and `bundle install`.
