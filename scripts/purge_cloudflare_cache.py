@@ -2,7 +2,7 @@
 # requires-python = ">=3.11"
 # dependencies = ["httpx>=0.28"]
 # ///
-"""Purge Cloudflare cache for files that rclone just synced to S3.
+"""Purge Cloudflare cache for files that rclone just synced to R2.
 
 Reads tmp/rclone.log (produced by `scripts/main push` with `-v
 --log-file=...`), extracts the paths rclone copied or deleted, maps them
