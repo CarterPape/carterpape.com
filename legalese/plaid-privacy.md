@@ -1,12 +1,12 @@
 ---
 layout: "browsing/single-card"
 title: "Plaid-API Tooling Privacy Policy"
-last_updated: "June 7, 2026"
+last_updated: "November 20, 2026"
 redirect_from: /legalese/plaid-whisperer-privacy/
 ---
 
 **Owner:** Carter Pape  
-**Effective:** 2026-05-15 (org-level recast 2026-06-07)  
+**Effective:** 2026-11-20  
 **Review cadence:** annually, or on material change
 
 ## Who this covers
@@ -21,7 +21,9 @@ redirect_from: /legalese/plaid-whisperer-privacy/
 
 ## How data is used 🎯
 
-Solely to generate the operator's own personal-finance outputs (e.g. the monthly Venmo-card summary, HSA-reimbursement tracking, monthly analytics). Data is **never** sold, rented, or shared for advertising, and is not disclosed to any third party except Plaid (as the data source) and the infrastructure the operator uses to run the tool.
+Solely for the operator's and household's own personal-finance outputs and analysis (e.g. the monthly Venmo-card summary, HSA-reimbursement tracking, budgeting and cash-flow analysis). Data is **never** sold, rented, or shared for advertising.
+
+The operator processes it with service providers he chooses for those purposes: currently Plaid (the data source), cloud hosting, email delivery, and an AI assistant (Anthropic's Claude, with model training on the operator's data turned off).
 
 ## How data is stored & protected 🔒
 
